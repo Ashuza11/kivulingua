@@ -10,13 +10,13 @@ export default function Hero() {
         <section className="relative overflow-hidden pt-40 pb-28">
 
             {/* Background Glow */}
-            <div className="absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#1E4D3A]/10 blur-3xl" />
+            <div className="absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#3B7D91]/10 blur-3xl" />
 
             <div className="relative mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
 
                 {/* LEFT CONTENT */}
                 <div>
-                    <div className="mb-6 inline-flex rounded-full border border-[#1E4D3A]/10 bg-[#1E4D3A]/10 px-4 py-2 text-sm font-medium text-[#1E4D3A]">
+                    <div className="mb-6 inline-flex rounded-full border border-[#3B7D91]/10 bg-[#3B7D91]/10 px-4 py-2 text-sm font-medium text-[#3B7D91]">
                         {t("badge")}
                     </div>
 
@@ -29,7 +29,7 @@ export default function Hero() {
                     </p>
 
                     <div className="mt-10 flex flex-wrap gap-4">
-                        <button className="rounded-full bg-[#1E4D3A] px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#163829]">
+                        <button className="rounded-full bg-[#3B7D91] px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#2D6478]">
                             {t("primaryButton")}
                         </button>
 
@@ -44,7 +44,7 @@ export default function Hero() {
                 <div className="grid gap-5 sm:grid-cols-2">
 
                     <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm">
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1E4D3A]/10 text-[#1E4D3A]">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#3B7D91]/10 text-[#3B7D91]">
                             <Users size={24} />
                         </div>
 
@@ -58,7 +58,7 @@ export default function Hero() {
                     </div>
 
                     <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm">
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#7A4E2D]/10 text-[#7A4E2D]">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#D4A574]/10 text-[#D4A574]">
                             <Languages size={24} />
                         </div>
 
@@ -72,7 +72,7 @@ export default function Hero() {
                     </div>
 
                     <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm">
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2D6A8A]/10 text-[#2D6A8A]">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#5A9FB0]/10 text-[#5A9FB0]">
                             <Mic size={24} />
                         </div>
 
@@ -86,7 +86,7 @@ export default function Hero() {
                     </div>
 
                     <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm">
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#B08968]/10 text-[#7A4E2D]">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#D4A574]/10 text-[#D4A574]">
                             <Database size={24} />
                         </div>
 

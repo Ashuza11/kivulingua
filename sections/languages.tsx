@@ -9,7 +9,7 @@ export default function Languages() {
             <div className="mx-auto max-w-7xl px-6">
 
                 <div className="max-w-3xl">
-                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#1E4D3A]">
+                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#3B7D91]">
                         Language Ecosystem
                     </p>
 
@@ -60,7 +60,7 @@ export default function Languages() {
                                         Speakers
                                     </p>
 
-                                    <h4 className="mt-1 text-xl font-bold text-[#1E4D3A]">
+                                    <h4 className="mt-1 text-xl font-bold text-[#3B7D91]">
                                         {language.speakers}
                                     </h4>
                                 </div>

@@ -8,14 +8,14 @@ export default function Footer() {
                 <div className="flex items-center gap-4">
 
                     <Image
-                        src="/logo.png"
+                        src="/logo.svg"
                         alt="KivuLingua Logo"
                         width={70}
                         height={70}
                     />
 
                     <div>
-                        <h3 className="text-xl font-bold text-[#1E4D3A]">
+                        <h3 className="text-xl font-bold text-[#3B7D91]">
                             KivuLingua
                         </h3>
 

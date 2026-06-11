@@ -3,31 +3,19 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
+import { locales, localeNames } from "@/i18n";
 
-const languages = [
-    {
-        code: "en",
-        label: "English",
-    },
-    {
-        code: "fr",
-        label: "Français",
-    },
-    {
-        code: "sw",
-        label: "Kiswahili",
-    },
-    {
-        code: "mh",
-        label: "Mashi",
-    },
-];
+const languages = locales.map((code) => ({
+    code,
+    label: localeNames[code as keyof typeof localeNames],
+}));
 
 export default function LanguageSwitcher() {
     const pathname = usePathname();
 
+    const localePattern = locales.join("|");
     const pathnameWithoutLocale = pathname.replace(
-        /^\/(en|fr|sw|mh)/,
+        new RegExp(`^/(${localePattern})`),
         ""
     );
 
@@ -47,8 +35,8 @@ export default function LanguageSwitcher() {
                             key={lang.code}
                             href={`/${lang.code}${pathnameWithoutLocale}`}
                             className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${isActive
-                                ? "bg-[#1E4D3A] text-white"
-                                : "text-black/60 hover:text-[#1E4D3A]"
+                                ? "bg-[#3B7D91] text-white"
+                                : "text-black/60 hover:text-[#3B7D91]"
                                 }`}
                         >
                             {lang.code.toUpperCase()}

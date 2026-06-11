@@ -3,9 +3,9 @@ export const theme = {
         background: "#F8F5F0",
         foreground: "#1A1A1A",
 
-        primary: "#1E4D3A",     // Deep forest green
-        secondary: "#7A4E2D",   // Earth brown
-        accent: "#2D6A8A",      // Lake Kivu blue
+        primary: "#3B7D91",     // Teal blue (water wave from logo)
+        secondary: "#D4A574",   // Gold (K from logo)
+        accent: "#5A9FB0",      // Light teal
 
         muted: "#E9E3D9",
         border: "#D6CEC2",
