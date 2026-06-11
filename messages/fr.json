@@ -6,7 +6,7 @@
         "roadmap": "Feuille de route"
     },
     "Hero": {
-        "badge": "IA Linguistique Africaine Communautaire",
+        "badge": "Initiative Africaine d’IA Multilingue Ouverte",
         "title": "Préserver les langues de l’Est du Congo grâce à l’IA",
         "titles": [
             "Preserving Eastern Congo Languages Through AI",
@@ -15,39 +15,39 @@
             "Kolindela Ndimi za Kongo Mpumbu kwa NKINSA",
             "Préserver les langues de l’Est du Congo grâce à l’IA"
         ],
-        "description": "KivuLingua construit des jeux de données vocaux et linguistiques ouverts pour les langues bantoues sous-représentées afin de favoriser une IA inclusive et la préservation linguistique.",
+        "description": "KivuLingua AI est une initiative scientifique ouverte créant des corpus multilingues vocaux et textuels de haute qualité pour les langues bantoues de l’Est de la RDC. Nous développons des modèles avancés de reconnaissance vocale (ASR) et synthèse vocale (TTS) tout en renforçant la souveraineté linguistique, l’inclusion numérique et la préservation du patrimoine culturel par la collaboration communautaire.",
         "primaryButton": "Explorer les langues",
         "secondaryButton": "Rejoindre la communauté",
         "stats": {
             "community": {
-                "value": "200+",
-                "description": "Locuteurs natifs du Mashi et contributeurs déjà impliqués dans la validation communautaire."
+                "value": "20M+",
+                "description": "Locuteurs natifs des langues bantoues ciblées en RDC orientale impliqués dans la collecte participative, validation et préservation linguistique."
             },
             "languages": {
-                "value": "8",
-                "description": "Langues bantoues sous-représentées de l’Est du Congo ciblées pour la préservation."
+                "value": "9",
+                "description": "Langues bantoues du Nord-Kivu, Sud-Kivu et Maniema prioritaires pour ASR, TTS et infrastructure IA multilingue."
             },
             "audio": {
-                "value": "70h+",
-                "description": "Enregistrements vocaux de haute qualité prévus pour les jeux de données ASR et TTS."
+                "value": "500h+",
+                "description": "Corpus audio multilingue planifié avec parole contrôlée, conversations spontanées, traditions orales et dialogues communautaires."
             },
             "open": {
-                "value": "Ouvert",
-                "description": "Jeux de données communautaires conçus pour une recherche ouverte sur les langues africaines."
+                "value": "Science Ouverte",
+                "description": "Jeux de données, modèles et références entièrement ouverts suivant les standards Mozilla Common Voice et l’éthique de la recherche."
             }
         }
     },
     "Research": {
-        "title": "Avancer la Science Linguistique par la Recherche",
-        "description": "Nos initiatives de recherche se concentrent sur le développement de méthodologies et d'outils pour l'IA en langues peu dotées de ressources. Nous collaborons avec les communautés linguistiques et les institutions académiques."
+        "title": "Infrastructure Scientifique pour les Technologie Linguistiques Africaines",
+        "description": "KivuLingua AI développe des systèmes avancés ASR et TTS utilisant des frameworks open-source: Whisper, wav2vec 2.0, MMS (Massively Multilingual Speech), SpeechBrain et Coqui TTS. Nous évaluons les performances via Word Error Rate (WER), Character Error Rate (CER), Mean Opinion Score (MOS). Notre recherche priorise la collecte éthique, la propriété communautaire et l'intégration avec Hugging Face et Mozilla Common Voice."
     },
     "Community": {
-        "title": "Autonomiser les Communautés par la Collaboration",
-        "description": "La préservation des langues commence avec la communauté. Nous travaillons directement avec les locuteurs natifs et les organisations locales pour assurer que notre travail respecte les contextes culturels.",
-        "cta": "Rejoignez le Mouvement"
+        "title": "Infrastructure Collaborative pour la Souveraineté Linguistique Numérique",
+        "description": "La participation communautaire ancre toutes les initiatives KivuLingua AI. Nous mobilisons locuteurs natifs, enseignants, leaders culturels, stations radio locales dans la collecte participative selon les standards éthiques internationaux. Les communautés cogèrent les données, valident les transcriptions et assurent l'appropriété culturelle. Nous priorisons le consentement informé, l'anonymisation et le partage des bénéfices.",
+        "cta": "Rejoignez Notre Initiative"
     },
     "Roadmap": {
-        "title": "Notre Parcours vers la Préservation des Langues",
-        "description": "Nous construisons ce projet de manière itérative avec les contributions de la communauté. Chaque phase s'appuie sur les réalisations précédentes."
+        "title": "Expansion Stratégique: Construction d'Infrastructure IA Linguistique Africaine",
+        "description": "KivuLingua AI avance par phases participatives, priorisant la fondation, développement des modèles, scaling de l'infrastructure et intégration écosystémique. Chaque jalon élargit la couverture linguistique, capacités techniques et partenariats tout en maintenant l'engagement envers la science ouverte et la souveraineté numérique."
     }
 }

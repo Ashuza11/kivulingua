@@ -8,26 +8,26 @@ export default function Research() {
 
     const papers = [
         {
-            title: "Language Preservation and AI: Ethical Frameworks for Bantu Language Documentation",
-            authors: "KivuLingua Research Team",
-            status: "Published",
-            icon: BookOpen,
-        },
-        {
-            title: "Building Low-Resource Language Datasets: Challenges and Community-Driven Solutions",
-            authors: "In collaboration with linguistic communities",
+            title: "Multilingual Speech Recognition for Low-Resource Bantu Languages using Whisper and wav2vec 2.0",
+            authors: "Muhigiri Ashuza, CIRUZA Alain, KivuLingua Research Team",
             status: "In Progress",
             icon: Microscope,
         },
         {
-            title: "Benchmarking ASR Performance on Underrepresented Bantu Languages",
-            authors: "KivuLingua & Partner Institutions",
+            title: "Community-Driven Corpus Creation for Bantu Language Speech AI: Methodology and Ethical Frameworks",
+            authors: "KivuLingua Project & Local Linguistic Communities",
+            status: "In Progress",
+            icon: BookOpen,
+        },
+        {
+            title: "Benchmarking ASR Performance: Word Error Rate and Character Error Rate Analysis for East Congolese Bantu Languages",
+            authors: "KivuLingua Technical Team",
             status: "Planned",
             icon: BarChart3,
         },
         {
-            title: "Open Source Tools for Community-Led Language Dataset Annotation",
-            authors: "Technical Development Team",
+            title: "Neural Text-to-Speech Synthesis for Endangered Bantu Languages using SpeechBrain and Coqui TTS",
+            authors: "CIRUZA Alain, Technical Development Team",
             status: "Planned",
             icon: GitBranch,
         },
