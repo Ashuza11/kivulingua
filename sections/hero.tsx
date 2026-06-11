@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Mic, Database, Languages, Users } from "lucide-react";
+import AnimatedTitle from "@/components/animated-title";
 
 export default function Hero() {
     const t = useTranslations("Hero");
@@ -20,9 +21,7 @@ export default function Hero() {
                         {t("badge")}
                     </div>
 
-                    <h1 className="text-5xl font-bold leading-tight tracking-tight text-[#111111] md:text-6xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                        {t("title")}
-                    </h1>
+                    <AnimatedTitle titles={t.raw("titles") as string[]} />
 
                     <p className="mt-8 max-w-2xl text-lg leading-8 text-black/70 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
                         {t("description")}

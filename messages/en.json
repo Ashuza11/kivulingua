@@ -8,6 +8,13 @@
     "Hero": {
         "badge": "Community-Led African Language AI",
         "title": "Preserving Eastern Congo Languages Through AI",
+        "titles": [
+            "Preserving Eastern Congo Languages Through AI",
+            "Okuchungula emiderho y'omubwami bwa Kivu rhugerere muli IA",
+            "Kulinda Lugha za Mashariki mwa Kongo kwa kutumia AI",
+            "Kolindela Ndimi za Kongo Mpumbu kwa NKINSA",
+            "Préserver les langues de l'Est du Congo grâce à l'IA"
+        ],
         "description": "KivuLingua is building open speech and language datasets for underrepresented Bantu languages to enable inclusive AI, linguistic preservation, and community-driven research across Eastern Congo.",
         "primaryButton": "Explore Languages",
         "secondaryButton": "Join Community",
