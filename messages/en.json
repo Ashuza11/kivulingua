@@ -6,7 +6,7 @@
         "roadmap": "Roadmap"
     },
     "Hero": {
-        "badge": "Community-Led African Language AI",
+        "badge": "Open-Source African Language AI Initiative",
         "title": "Preserving Eastern Congo Languages Through AI",
         "titles": [
             "Preserving Eastern Congo Languages Through AI",
@@ -15,39 +15,39 @@
             "Kolindela Ndimi za Kongo Mpumbu kwa NKINSA",
             "Préserver les langues de l'Est du Congo grâce à l'IA"
         ],
-        "description": "KivuLingua is building open speech and language datasets for underrepresented Bantu languages to enable inclusive AI, linguistic preservation, and community-driven research across Eastern Congo.",
+        "description": "KivuLingua AI is an open scientific initiative creating high-quality multilingual speech and text datasets for Bantu languages of Eastern DRC. We develop advanced ASR and TTS models while strengthening linguistic sovereignty, digital inclusion, and cultural heritage preservation through community collaboration.",
         "primaryButton": "Explore Languages",
         "secondaryButton": "Join Community",
         "stats": {
             "community": {
-                "value": "200+",
-                "description": "Native Mashi speakers and contributors already involved in community validation and linguistic preservation."
+                "value": "20M+",
+                "description": "Native speakers of targeted Bantu languages in Eastern DRC engaged in community-driven data collection, validation and linguistic preservation."
             },
             "languages": {
-                "value": "8",
-                "description": "Underrepresented Bantu languages from Eastern Congo targeted for preservation and AI research."
+                "value": "9",
+                "description": "Bantu languages from North Kivu, South Kivu and Maniema prioritized for ASR, TTS and multilingual AI infrastructure."
             },
             "audio": {
-                "value": "70h+",
-                "description": "High-quality aligned speech recordings planned for ASR and TTS dataset construction."
+                "value": "500h+",
+                "description": "High-quality multilingual audio corpus planned with controlled speech, spontaneous conversations, oral traditions and community dialogue."
             },
             "open": {
-                "value": "Open",
-                "description": "Community-owned datasets and benchmarks designed for open African language AI research."
+                "value": "Open Science",
+                "description": "Fully open datasets, models and benchmarks following Mozilla Common Voice standards and international research ethics principles."
             }
         }
     },
     "Research": {
-        "title": "Advancing Language Science Through Research",
-        "description": "Our research initiatives focus on developing methodologies and tools for low-resource language AI. We collaborate with linguistic communities and academic institutions to produce peer-reviewed research and open-source contributions to the field."
+        "title": "Scientific Infrastructure for African Language Technologies",
+        "description": "KivuLingua AI develops advanced ASR and TTS systems using open-source frameworks: Whisper, wav2vec 2.0, MMS (Massively Multilingual Speech), SpeechBrain, and Coqui TTS. We evaluate performance through Word Error Rate (WER), Character Error Rate (CER), Mean Opinion Score (MOS) and comparative benchmarking. Our research prioritizes ethical data collection, community ownership, and integration with international open-science ecosystems including Hugging Face and Mozilla Common Voice."
     },
     "Community": {
-        "title": "Empowering Communities Through Collaboration",
-        "description": "Language preservation begins with community. We work directly with native speakers, linguistic experts, and local organizations to ensure our work respects cultural contexts and creates lasting impact.",
-        "cta": "Join the Movement"
+        "title": "Collaborative Infrastructure for Digital Linguistic Sovereignty",
+        "description": "Community participation anchors all KivuLingua AI initiatives. We engage native speakers, teachers, cultural leaders, local radio stations and religious institutions in participatory data collection following international ethical research standards. Linguistic communities co-govern datasets, validate transcriptions, and ensure cultural appropriateness. We prioritize informed consent, data anonymization, and community benefit-sharing while building sustainable African-led AI ecosystems.",
+        "cta": "Join Our Initiative"
     },
     "Roadmap": {
-        "title": "Our Journey to Language Preservation",
-        "description": "We're building this project incrementally with community input. Each phase builds upon previous achievements while expanding our reach across more languages and regions."
+        "title": "Strategic Expansion: Building African-Led Language AI Infrastructure",
+        "description": "KivuLingua AI advances iteratively through participatory phases, prioritizing foundation-building, model development, infrastructure scaling, and ecosystem integration. Each milestone expands linguistic coverage, technical capacity, community engagement and institutional partnerships while maintaining commitment to open science, ethical data practices and digital sovereignty for East Congolese language communities."
     }
 }
