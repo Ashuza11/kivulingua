@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Mail, Linkedin, Globe } from "lucide-react";
+import { Mail, Globe } from "lucide-react";
 
 export default function Team() {
     const t = useTranslations("Team");
@@ -92,10 +92,11 @@ export default function Team() {
                                             href={member.linkedin}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center justify-center h-10 w-10 rounded-lg bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition"
+                                            className="flex items-center justify-center h-10 w-10 rounded-lg bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition font-bold"
                                             aria-label="LinkedIn"
+                                            title="LinkedIn"
                                         >
-                                            <Linkedin size={18} />
+                                            in
                                         </a>
                                     )}
                                     {member.website && (
