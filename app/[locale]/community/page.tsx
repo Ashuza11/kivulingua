@@ -1,18 +1,14 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Community from "@/sections/community";
 
-import Hero from "@/sections/hero";
-import Team from "@/sections/team";
-
-export default function Home() {
+export default function CommunityPage() {
   return (
     <main>
       <Navbar />
-
-      <Hero />
-
-      <Team />
-
+      <div className="pt-20">
+        <Community />
+      </div>
       <Footer />
     </main>
   );

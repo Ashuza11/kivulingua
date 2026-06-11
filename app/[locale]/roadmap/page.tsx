@@ -1,18 +1,14 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Roadmap from "@/sections/roadmap";
 
-import Hero from "@/sections/hero";
-import Team from "@/sections/team";
-
-export default function Home() {
+export default function RoadmapPage() {
   return (
     <main>
       <Navbar />
-
-      <Hero />
-
-      <Team />
-
+      <div className="pt-20">
+        <Roadmap />
+      </div>
       <Footer />
     </main>
   );
