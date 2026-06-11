@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="flex items-center gap-4">
 
                     <Image
-                        src="/logo.svg"
+                        src="/logowhite.png"
                         alt="KivuLingua Logo"
                         width={70}
                         height={70}

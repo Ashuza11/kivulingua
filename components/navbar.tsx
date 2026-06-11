@@ -18,7 +18,7 @@ export default function Navbar() {
                     className="flex items-center gap-3"
                 >
                     <Image
-                        src="/logo.svg"
+                        src="/logowhite.png"
                         alt="KivuLingua Logo"
                         width={42}
                         height={42}
