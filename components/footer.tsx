@@ -1,33 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, Phone, Globe, Code, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Phone, Globe } from "lucide-react";
 
 export default function Footer() {
     const whatsappNumber = "+250782672288";
     const whatsappMessage = "Hello KivuLingua AI Team!";
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
-
-    const socialLinks = [
-        {
-            icon: Linkedin,
-            url: "https://linkedin.com",
-            label: "LinkedIn",
-            color: "text-blue-600 hover:text-blue-700",
-        },
-        {
-            icon: Code,
-            url: "https://github.com",
-            label: "GitHub",
-            color: "text-gray-800 hover:text-gray-900",
-        },
-        {
-            icon: ExternalLink,
-            url: "https://kivulinguaai.org",
-            label: "Website",
-            color: "text-[#3B7D91] hover:text-[#2D6478]",
-        },
-    ];
 
     return (
         <footer className="border-t border-black/5 bg-white py-16">
@@ -94,7 +73,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Website & Social */}
+                    {/* Website & Social Media */}
                     <div>
                         <h4 className="font-bold text-black mb-4">Follow Us</h4>
                         <div className="space-y-4">
@@ -108,22 +87,31 @@ export default function Footer() {
                                 Visit Website
                             </a>
 
-                            <div className="flex gap-4 pt-2">
-                                {socialLinks.map((social) => {
-                                    const Icon = social.icon;
-                                    return (
-                                        <a
-                                            key={social.label}
-                                            href={social.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label={social.label}
-                                            className={`${social.color} transition`}
-                                        >
-                                            <Icon size={20} />
-                                        </a>
-                                    );
-                                })}
+                            <div className="space-y-2 pt-2">
+                                <a
+                                    href="https://github.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
+                                >
+                                    → GitHub
+                                </a>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
+                                >
+                                    → LinkedIn
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
+                                >
+                                    → Twitter
+                                </a>
                             </div>
                         </div>
                     </div>
