@@ -29,5 +29,18 @@
                 "description": "Datasets zifunguye kandi zigenzurwa n’abaturage ku bushakashatsi bwa AI y’indimi."
             }
         }
+    },
+    "Research": {
+        "title": "Kusimura Ubushakashatsi bwa Indimi",
+        "description": "Imigani yabyo y’ubushakashatsi irinzira ku nzira n’imikoresho yo mu AI y’indimi idakenereza. Tukorana n’aturage n’imitigurire y’amashuri."
+    },
+    "Community": {
+        "title": "Gutsindira Aturage Kubareba Hamwe",
+        "description": "Kubika indimi bigira aha katika aturage. Turakora hamwe n’abavuga ishi kavukire n’andi maturage kugira ngo akazi kwacu gahishure izu cyubaka indimi.",
+        "cta": "Yinjira mu Mahoro"
+    },
+    "Roadmap": {
+        "title": "Inzira Yacu y’Ubwiku bw’Indimi",
+        "description": "Turagira mushinga uru hakurikizanya intego z’aturage. Buri nyina irizamuka kuri ikibazo cyabanjirije."
     }
 }

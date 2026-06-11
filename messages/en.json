@@ -29,5 +29,18 @@
                 "description": "Community-owned datasets and benchmarks designed for open African language AI research."
             }
         }
+    },
+    "Research": {
+        "title": "Advancing Language Science Through Research",
+        "description": "Our research initiatives focus on developing methodologies and tools for low-resource language AI. We collaborate with linguistic communities and academic institutions to produce peer-reviewed research and open-source contributions to the field."
+    },
+    "Community": {
+        "title": "Empowering Communities Through Collaboration",
+        "description": "Language preservation begins with community. We work directly with native speakers, linguistic experts, and local organizations to ensure our work respects cultural contexts and creates lasting impact.",
+        "cta": "Join the Movement"
+    },
+    "Roadmap": {
+        "title": "Our Journey to Language Preservation",
+        "description": "We're building this project incrementally with community input. Each phase builds upon previous achievements while expanding our reach across more languages and regions."
     }
 }

@@ -29,5 +29,18 @@
                 "description": "Jeux de données communautaires conçus pour une recherche ouverte sur les langues africaines."
             }
         }
+    },
+    "Research": {
+        "title": "Avancer la Science Linguistique par la Recherche",
+        "description": "Nos initiatives de recherche se concentrent sur le développement de méthodologies et d'outils pour l'IA en langues peu dotées de ressources. Nous collaborons avec les communautés linguistiques et les institutions académiques."
+    },
+    "Community": {
+        "title": "Autonomiser les Communautés par la Collaboration",
+        "description": "La préservation des langues commence avec la communauté. Nous travaillons directement avec les locuteurs natifs et les organisations locales pour assurer que notre travail respecte les contextes culturels.",
+        "cta": "Rejoignez le Mouvement"
+    },
+    "Roadmap": {
+        "title": "Notre Parcours vers la Préservation des Langues",
+        "description": "Nous construisons ce projet de manière itérative avec les contributions de la communauté. Chaque phase s'appuie sur les réalisations précédentes."
     }
 }
