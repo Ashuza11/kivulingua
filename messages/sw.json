@@ -29,5 +29,18 @@
                 "description": "Datasets za wazi zinazomilikiwa na jamii kwa utafiti wa lugha za Kiafrika."
             }
         }
+    },
+    "Research": {
+        "title": "Kusonga Sayansi ya Lugha Kupitia Utafiti",
+        "description": "Juhudi zetu za utafiti zinalenga kuendeleza mbinu na zana kwa AI ya lugha za kidogo. Tunashirikiana na jamii za linguistic na taasisi za akademiki."
+    },
+    "Community": {
+        "title": "Kuwezesha Jamii Kupitia Ushirikiano",
+        "description": "Uhifadhi wa lugha huanza na jamii. Tunafanya kazi moja kwa moja na watumiaji wa asili na taasisi za ndani ili kuhakikisha kwamba kazi yetu inaheshimu muktadha wa kitamaduni.",
+        "cta": "Jiunge na Harakati"
+    },
+    "Roadmap": {
+        "title": "Safari Yetu Kuelekea Uhifadhi wa Lugha",
+        "description": "Tunajenga mradi huu kwa hatua sawa sawa na mchango wa jamii. Kila awamu inajengwa juu ya mafanikio ya hapo awali."
     }
 }
