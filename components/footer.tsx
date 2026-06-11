@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, Phone, Globe, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, Globe, Github, Linkedin, Share2 } from "lucide-react";
 
 export default function Footer() {
     const whatsappNumber = "+250782672288";
@@ -16,16 +16,16 @@ export default function Footer() {
             color: "text-blue-600 hover:text-blue-700",
         },
         {
-            icon: Twitter,
-            url: "https://twitter.com",
-            label: "Twitter",
-            color: "text-blue-400 hover:text-blue-500",
-        },
-        {
             icon: Github,
             url: "https://github.com",
             label: "GitHub",
             color: "text-gray-800 hover:text-gray-900",
+        },
+        {
+            icon: Mail,
+            url: "mailto:ashuzamh@gmail.com",
+            label: "Email",
+            color: "text-[#3B7D91] hover:text-[#2D6478]",
         },
     ];
 
