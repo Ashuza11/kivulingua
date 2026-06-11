@@ -8,6 +8,13 @@
     "Hero": {
         "badge": "IA Linguistique Africaine Communautaire",
         "title": "Préserver les langues de l’Est du Congo grâce à l’IA",
+        "titles": [
+            "Preserving Eastern Congo Languages Through AI",
+            "Okuchungula emiderho y’omubwami bwa Kivu rhugerere muli IA",
+            "Kulinda Lugha za Mashariki mwa Kongo kwa kutumia AI",
+            "Kolindela Ndimi za Kongo Mpumbu kwa NKINSA",
+            "Préserver les langues de l’Est du Congo grâce à l’IA"
+        ],
         "description": "KivuLingua construit des jeux de données vocaux et linguistiques ouverts pour les langues bantoues sous-représentées afin de favoriser une IA inclusive et la préservation linguistique.",
         "primaryButton": "Explorer les langues",
         "secondaryButton": "Rejoindre la communauté",
