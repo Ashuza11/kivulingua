@@ -1,23 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 import LanguageSwitcher from "./language-switcher";
 
 export default function Navbar() {
     const t = useTranslations("Navbar");
+    const locale = useLocale();
 
     return (
         <nav className="fixed top-0 z-50 w-full border-b border-black/5 bg-[#F8F5F0]/80 backdrop-blur-xl">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
 
                 <a
-                    href="/"
+                    href={`/${locale}`}
                     className="flex items-center gap-3"
                 >
                     <Image
-                        src="/logo.png"
+                        src="/logo.svg"
                         alt="KivuLingua Logo"
                         width={42}
                         height={42}
@@ -25,7 +26,7 @@ export default function Navbar() {
                     />
 
                     <div>
-                        <h1 className="text-xl font-bold tracking-tight text-[#1E4D3A]">
+                        <h1 className="text-xl font-bold tracking-tight text-[#3B7D91]">
                             KivuLingua AI
                         </h1>
 
@@ -39,28 +40,28 @@ export default function Navbar() {
 
                     <a
                         href="#languages"
-                        className="transition hover:text-[#1E4D3A]"
+                        className="transition hover:text-[#3B7D91]"
                     >
                         {t("languages")}
                     </a>
 
                     <a
                         href="#research"
-                        className="transition hover:text-[#1E4D3A]"
+                        className="transition hover:text-[#3B7D91]"
                     >
                         {t("research")}
                     </a>
 
                     <a
                         href="#community"
-                        className="transition hover:text-[#1E4D3A]"
+                        className="transition hover:text-[#3B7D91]"
                     >
                         {t("community")}
                     </a>
 
                     <a
                         href="#roadmap"
-                        className="transition hover:text-[#1E4D3A]"
+                        className="transition hover:text-[#3B7D91]"
                     >
                         {t("roadmap")}
                     </a>
