@@ -1,18 +1,14 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Languages from "@/sections/languages";
 
-import Hero from "@/sections/hero";
-import Team from "@/sections/team";
-
-export default function Home() {
+export default function LanguagesPage() {
   return (
     <main>
       <Navbar />
-
-      <Hero />
-
-      <Team />
-
+      <div className="pt-20">
+        <Languages />
+      </div>
       <Footer />
     </main>
   );

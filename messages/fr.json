@@ -49,5 +49,10 @@
     "Roadmap": {
         "title": "Expansion Stratégique: Construction d'Infrastructure IA Linguistique Africaine",
         "description": "KivuLingua AI avance par phases participatives, priorisant la fondation, développement des modèles, scaling de l'infrastructure et intégration écosystémique. Chaque jalon élargit la couverture linguistique, capacités techniques et partenariats tout en maintenant l'engagement envers la science ouverte et la souveraineté numérique."
+    },
+    "Team": {
+        "badge": "Rencontrez Notre Équipe",
+        "title": "Leadership pour la Préservation Linguistique",
+        "description": "Notre équipe interdisciplinaire combine l'expertise en intelligence artificielle, apprentissage automatique et documentation de langues autochtones pour construire une infrastructure durable pour les technologies linguistiques africaines."
     }
 }
