@@ -6,34 +6,34 @@
         "roadmap": "Roadmap"
     },
     "Hero": {
-        "badge": "Open-Source African Language AI Initiative",
-        "title": "Preserving Eastern Congo Languages Through AI",
+        "badge": "Community-Led African Language AI",
+        "title": "Building AI Infrastructure for Eastern Congo's Bantu Languages",
         "titles": [
-            "Preserving Eastern Congo Languages Through AI",
+            "Building AI Infrastructure for Eastern Congo's Bantu Languages",
             "Okuchungula emiderho y'omubwami bwa Kivu rhugerere muli IA",
             "Kulinda Lugha za Mashariki mwa Kongo kwa kutumia AI",
             "Kobatela nkota ya Est ya Kongo na nzela ya IA",
-            "Préserver les langues de l'Est du Congo grâce à l'IA"
+            "Construire une infrastructure IA pour les langues bantoues de l'Est du Congo"
         ],
-        "description": "KivuLingua AI is an open scientific initiative creating high-quality multilingual speech and text datasets for Bantu languages of Eastern DRC. We develop advanced ASR and TTS models while strengthening linguistic sovereignty, digital inclusion, and cultural heritage preservation through community collaboration.",
-        "primaryButton": "Explore Languages",
-        "secondaryButton": "Join Community",
+        "description": "KivuLingua AI is an initiative dedicated to the creation of the first open infrastructure for speech data and AI models for Eastern Congo's Bantu languages, beginning with Mashi (1.9M speakers). We build ethical ASR and TTS systems anchored in real-world use cases: literacy education via Teaching at the Right Level (TaRL) and community health communication, ensuring continuous linguistic datafication and digital sovereignty.",
+        "primaryButton": "Explore Our Work",
+        "secondaryButton": "Join Our Community",
         "stats": {
             "community": {
-                "value": "20M+",
-                "description": "Native speakers of targeted Bantu languages in Eastern DRC engaged in community-driven data collection, validation and linguistic preservation."
+                "value": "200+",
+                "description": "Native Mashi speakers and contributors already mobilized for community validation, linguistic preservation and participatory data governance."
             },
             "languages": {
-                "value": "9",
-                "description": "Bantu languages from North Kivu, South Kivu and Maniema prioritized for ASR, TTS and multilingual AI infrastructure."
+                "value": "8",
+                "description": "Underrepresented Bantu languages across Eastern Congo (North Kivu, South Kivu) prioritized for sustained ASR, TTS and multilingual AI development."
             },
             "audio": {
-                "value": "500h+",
-                "description": "High-quality multilingual audio corpus planned with controlled speech, spontaneous conversations, oral traditions and community dialogue."
+                "value": "250h+",
+                "description": "High-quality aligned speech corpus in Mashi collected across diverse genres: read speech, spontaneous conversations, oral narratives and functional content."
             },
             "open": {
-                "value": "Open Science",
-                "description": "Fully open datasets, models and benchmarks following Mozilla Common Voice standards and international research ethics principles."
+                "value": "Apache 2.0",
+                "description": "All datasets, models, and tools published under open licenses on Hugging Face, GitHub and Zenodo as African digital public goods."
             }
         }
     },
@@ -47,8 +47,143 @@
         "cta": "Join Our Initiative"
     },
     "Roadmap": {
-        "title": "Strategic Expansion: Building African-Led Language AI Infrastructure",
-        "description": "KivuLingua AI advances iteratively through participatory phases, prioritizing foundation-building, model development, infrastructure scaling, and ecosystem integration. Each milestone expands linguistic coverage, technical capacity, community engagement and institutional partnerships while maintaining commitment to open science, ethical data practices and digital sovereignty for East Congolese language communities."
+        "title": "12-Month Implementation Timeline (Jul 2026 - Jun 2027)",
+        "description": "Our strategic roadmap integrates continuous data collection, model development, educational and health pilots, and open ecosystem publication. Each phase builds on community participation, ethical protocols, and measurable impact in real-world use cases."
+    },
+    "Objectives": {
+        "title": "Strategic Objectives",
+        "description": "KivuLingua AI is committed to building the first open, ethical, and sustainable infrastructure for voice data and AI models for Mashi, reproducible across all Bantu languages in the Kivu region.",
+        "goals": [
+            {
+                "title": "Collect Open Speech Data",
+                "description": "Gather and publish at least 250 hours of validated Mashi vocal corpus, balanced by gender, age, and dialectal variant from 200+ native speakers"
+            },
+            {
+                "title": "Develop Open-Source ASR",
+                "description": "Create an edge-optimized ASR model for Mashi (CPU-only, offline, <1B parameters) using Whisper, wav2vec 2.0, and MMS fine-tuning"
+            },
+            {
+                "title": "Develop TTS System",
+                "description": "Build an initial TTS model for Mashi using Coqui TTS for accessible speech synthesis and educational content generation"
+            },
+            {
+                "title": "Deploy Educational Pilot",
+                "description": "Implement Teaching at the Right Level (TaRL) literacy program in 5+ rural Bushi schools serving 500+ students in mother-tongue education"
+            },
+            {
+                "title": "Deploy Health Pilot",
+                "description": "Equip 30+ community health workers with mobile app for offline voice data collection in Mashi-speaking regions"
+            },
+            {
+                "title": "Build Reproducible Pipeline",
+                "description": "Create documented, open-source infrastructure enabling cost-effective extension to 8 other Kivu Bantu languages in Phase 2"
+            },
+            {
+                "title": "Train Community Contributors",
+                "description": "Build capacity of 50+ local data collectors, transcribers, and validators in ethical data practices and quality standards"
+            },
+            {
+                "title": "Publish All Resources",
+                "description": "Release corpus, models, tools, and benchmarks under Apache 2.0 on Hugging Face, Zenodo, and GitHub as African digital public goods"
+            }
+        ]
+    },
+    "UseCases": {
+        "title": "Real-World Impact Through Education & Health",
+        "description": "KivuLingua AI resources directly serve two high-impact use cases that anchor the entire data collection strategy.",
+        "cases": [
+            {
+                "icon": "BookOpen",
+                "title": "Literacy Education (TaRL)",
+                "description": "Teaching at the Right Level (TaRL) approach in mother-tongue Mashi for rural Bushi schools. Children learn to read in their native language with AI-powered audio content through the Ntina platform.",
+                "impact": "500+ students, 5 schools, measurable improvement in foundational literacy"
+            },
+            {
+                "icon": "Heart",
+                "title": "Community Health",
+                "description": "Community health workers use voice-based mobile app to deliver prevention messages in Mashi (vaccination, maternal health, nutrition) and record patient data offline in rural Eastern DRC.",
+                "impact": "30+ health workers, 1,500+ households reached indirectly"
+            }
+        ]
+    },
+    "DataCollection": {
+        "title": "Ethical, Continuous Data Collection",
+        "description": "Our approach goes beyond episodic data campaigns. Following Fendji's datafication framework, we build infrastructure where teachers and health workers naturally generate contextualized speech data through daily interactions.",
+        "approach": "Infrastructure Before Annotation: Deploy mobile app first, let natural workflows generate data. Transcription follows, not vice versa.",
+        "dataTypes": [
+            {
+                "type": "Read Speech (40%)",
+                "description": "Controlled texts - educational content, health messages, proverbs"
+            },
+            {
+                "type": "Spontaneous Conversations (25%)",
+                "description": "Semi-directed dialogues in educational and health contexts"
+            },
+            {
+                "type": "Oral Narratives (20%)",
+                "description": "Stories, testimonies, cultural traditions"
+            },
+            {
+                "type": "Functional Content (15%)",
+                "description": "Teaching instructions, prevention messages, patient forms"
+            }
+        ]
+    },
+    "Technology": {
+        "title": "Open-Source Models & Tools",
+        "description": "We develop production-ready AI systems using proven open-source frameworks, optimized for offline deployment in resource-constrained settings.",
+        "components": [
+            {
+                "title": "ASR Model (Speech Recognition)",
+                "description": "Fine-tuned Whisper, wav2vec 2.0, and MMS for Mashi. Optimized for Edge: <1B parameters, CPU-only, <2x real-time on low-end Android devices",
+                "metric": "Target WER < 25%"
+            },
+            {
+                "title": "TTS Model (Speech Synthesis)",
+                "description": "Coqui TTS trained on Mashi corpus for text-to-speech in educational and health applications",
+                "metric": "Target MOS > 3.5 (community evaluation)"
+            },
+            {
+                "title": "Mobile Collection App",
+                "description": "Co-developed with Kwetu Best Technologies. Android app for offline voice capture, transcription integration, and automatic linguistic data generation",
+                "metric": "Deployed with 30 health workers + 5 schools"
+            },
+            {
+                "title": "Reproducible Pipeline",
+                "description": "Complete open-source toolkit: annotation scripts, quality assurance, evaluation benchmarks, documentation—ready for 8 additional Kivu languages",
+                "metric": "Published on GitHub under Apache 2.0"
+            }
+        ]
+    },
+    "Ethics": {
+        "title": "Ethics, Governance & Community Sovereignty",
+        "description": "Community control over linguistic data comes before open access. We prioritize informed consent, ethical governance, and meaningful benefit-sharing.",
+        "principles": [
+            {
+                "principle": "Sovereignty Before Openness",
+                "description": "Mashi community council (Matabaro, Nshombo, Prof. Nkunzimwami) validates all data access terms before publication"
+            },
+            {
+                "principle": "Infrastructure Before Annotation",
+                "description": "Build sustainable systems where data generation is continuous and community-centered, not episodic campaigns"
+            },
+            {
+                "principle": "Continuity Before Exhaustivity",
+                "description": "Prioritize robust ongoing data flow over attempting complete linguistic coverage in isolation"
+            },
+            {
+                "principle": "Informed Consent",
+                "description": "Bilingual consent forms (Mashi/French), explicit right of withdrawal, anonymization of personal data"
+            },
+            {
+                "principle": "Gender & Diversity Balance",
+                "description": "Minimum 50% women contributors across collection, spanning ages 15-65 and 4+ geographic zones"
+            },
+            {
+                "principle": "Conflict-Sensitive Approach",
+                "description": "Security of participants prioritized. Data never used for surveillance. No collection in active conflict zones"
+            }
+        ]
     },
     "Team": {
         "badge": "Meet Our Team",
