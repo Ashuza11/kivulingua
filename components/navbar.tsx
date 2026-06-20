@@ -15,6 +15,7 @@ export default function Navbar() {
     const navLinks = [
         { href: `/${locale}/languages`, label: t("languages") },
         { href: `/${locale}/research`, label: t("research") },
+        { href: `/${locale}/team`, label: "Team" },
         { href: `/${locale}/community`, label: t("community") },
         { href: `/${locale}/roadmap`, label: t("roadmap") },
     ];
