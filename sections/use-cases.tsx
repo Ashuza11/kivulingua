@@ -74,7 +74,7 @@ export default function UseCases() {
                 <div className="mt-12 rounded-2xl bg-gradient-to-r from-[#3B7D91]/10 to-[#D4A574]/10 border border-black/5 p-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                     <h3 className="text-xl font-bold mb-4">Strategic Innovation: Continuous Datafication</h3>
                     <p className="text-black/70 leading-7">
-                        Unlike episodic data campaigns, KivuLingua AI builds <span className="font-semibold">infrastructure before annotation</span>. We deploy mobile apps that transform daily workflows (teaching, health service delivery) into continuous streams of contextualized linguistic data. This 'datafication' approach, grounded in the framework of Fendji (2026), ensures data generation is sustainable, meaningful, and embedded in community needs—not artificially extracted.
+                        Unlike episodic data campaigns, KivuLingua AI builds <span className="font-semibold">infrastructure before annotation</span>. We deploy mobile apps that transform daily workflows (teaching, health service delivery) into continuous streams of contextualized linguistic data. This 'datafication' approach, grounded in the framework of Fendji (2026), ensures data generation is sustainable, meaningful, and embedded in community needs, not artificially extracted.
                     </p>
                 </div>
             </div>

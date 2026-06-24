@@ -98,7 +98,7 @@ export default function Ethics() {
                         <div>
                             <h3 className="text-xl font-bold mb-2">Masakhane Values & Ubuntu Philosophy</h3>
                             <p className="text-black/70 leading-7">
-                                KivuLingua AI is aligned with Masakhane's principles of Ubuntu, Equity, Transparency, and Community Innovation. All outputs (corpus, models, tools) are published under open licenses (Apache 2.0, CC-BY 4.0) and contributed to the African AI ecosystem as digital public goods. Language is a shared heritage—we build infrastructure to serve the entire community.
+                                KivuLingua AI is aligned with Masakhane's principles of Ubuntu, Equity, Transparency, and Community Innovation. All outputs (corpus, models, tools) are published under open licenses (Apache 2.0, CC-BY 4.0) and contributed to the African AI ecosystem as digital public goods. Language is a shared heritage. We build infrastructure to serve the entire community.
                             </p>
                         </div>
                     </div>

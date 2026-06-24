@@ -28,7 +28,7 @@ const technologies = [
     {
         icon: GitBranch,
         title: "Reproducible Pipeline",
-        description: "Complete open-source toolkit: annotation scripts, quality assurance, evaluation benchmarks, documentation—ready for 8 additional Kivu languages.",
+        description: "Complete open-source toolkit: annotation scripts, quality assurance, evaluation benchmarks, documentation, ready for 8 additional Kivu languages.",
         metric: "Apache 2.0 License",
         color: "#D4A574"
     }

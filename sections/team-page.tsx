@@ -229,7 +229,7 @@ export default function TeamPage() {
                 <div className="mt-20 rounded-2xl bg-gradient-to-r from-[#3B7D91]/10 to-[#D4A574]/10 border border-black/5 p-12 text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                     <h3 className="text-2xl font-bold mb-3">Join Our Team</h3>
                     <p className="text-black/70 mb-6 max-w-2xl mx-auto">
-                        We're always looking for passionate contributors—linguists, ML engineers, community mobilizers, and advocates. If you're interested in building AI infrastructure for African languages, get in touch.
+                        We're always looking for passionate contributors: linguists, ML engineers, community mobilizers, and advocates. If you're interested in building AI infrastructure for African languages, get in touch.
                     </p>
                     <a
                         href="mailto:contact@stemrh.org"

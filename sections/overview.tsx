@@ -120,7 +120,7 @@ export default function Overview() {
                 <div className="mt-16 rounded-2xl bg-gradient-to-r from-[#3B7D91]/10 to-[#D4A574]/10 border border-black/5 p-8 md:p-12 text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                     <h3 className="text-2xl font-bold mb-3">Ready to Get Involved?</h3>
                     <p className="text-black/70 mb-6 max-w-2xl mx-auto">
-                        We welcome linguists, ML engineers, educators, health workers, and community advocates. Whether you want to contribute data, collaborate on research, or support our mission—join us.
+                        We welcome linguists, ML engineers, educators, health workers, and community advocates. Whether you want to contribute data, collaborate on research, or support our mission, join us.
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
                         <Link
