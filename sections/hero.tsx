@@ -10,6 +10,56 @@ export default function Hero() {
     return (
         <section className="relative overflow-hidden pt-40 pb-28">
 
+            {/* Cultural Background Pattern */}
+            <div className="absolute inset-0 opacity-5 pointer-events-none">
+                <svg
+                    viewBox="0 0 1200 600"
+                    className="w-full h-full"
+                    preserveAspectRatio="xMidYMid slice"
+                >
+                    {/* Geometric patterns inspired by African art */}
+                    <defs>
+                        <pattern
+                            id="african-pattern"
+                            x="0"
+                            y="0"
+                            width="100"
+                            height="100"
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <circle cx="50" cy="50" r="10" fill="#3B7D91" />
+                            <path
+                                d="M50 20 L70 50 L50 80 L30 50 Z"
+                                fill="none"
+                                stroke="#D4A574"
+                                strokeWidth="2"
+                            />
+                            <line
+                                x1="20"
+                                y1="50"
+                                x2="80"
+                                y2="50"
+                                stroke="#5A9FB0"
+                                strokeWidth="1"
+                            />
+                            <line
+                                x1="50"
+                                y1="20"
+                                x2="50"
+                                y2="80"
+                                stroke="#5A9FB0"
+                                strokeWidth="1"
+                            />
+                        </pattern>
+                    </defs>
+                    <rect
+                        width="1200"
+                        height="600"
+                        fill="url(#african-pattern)"
+                    />
+                </svg>
+            </div>
+
             {/* Background Glow */}
             <div className="absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#3B7D91]/10 blur-3xl animate-pulse-subtle" />
 

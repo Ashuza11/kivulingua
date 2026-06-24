@@ -1,40 +1,75 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, Globe } from "lucide-react";
+import { useLocale } from "next-intl";
 
 export default function Footer() {
+    const locale = useLocale();
     const whatsappNumber = "+250782672288";
     const whatsappMessage = "Hello KivuLingua AI Team!";
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
 
     return (
-        <footer className="border-t border-black/5 bg-white py-16">
+        <footer className="relative bg-white py-16">
+            {/* Curvy Animated Separator */}
+            <div className="absolute top-0 left-0 right-0 h-16 -translate-y-full">
+                <svg
+                    viewBox="0 0 1200 60"
+                    className="w-full h-full"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M0,30 Q300,10 600,30 T1200,30"
+                        fill="none"
+                        stroke="url(#gradient)"
+                        strokeWidth="3"
+                        className="animate-pulse-subtle"
+                    />
+                    <defs>
+                        <linearGradient
+                            id="gradient"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="0%"
+                        >
+                            <stop
+                                offset="0%"
+                                stopColor="#3B7D91"
+                                stopOpacity="0.3"
+                            />
+                            <stop
+                                offset="50%"
+                                stopColor="#D4A574"
+                                stopOpacity="0.6"
+                            />
+                            <stop
+                                offset="100%"
+                                stopColor="#3B7D91"
+                                stopOpacity="0.3"
+                            />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
             <div className="mx-auto max-w-7xl px-6">
                 <div className="grid gap-12 md:grid-cols-4">
-                    {/* Logo & Description */}
+                    {/* Logo Only */}
                     <div className="md:col-span-2">
-                        <div className="flex items-center gap-4 mb-4">
+                        <Link href={`/${locale}`} className="inline-block mb-6">
                             <Image
                                 src="/kivuliguaAI_logo.svg"
                                 alt="KivuLingua Logo"
-                                width={60}
-                                height={60}
-                                className="object-contain"
+                                width={70}
+                                height={70}
+                                className="object-contain hover:scale-110 transition duration-300"
                             />
+                        </Link>
 
-                            <div>
-                                <h3 className="text-xl font-bold text-[#3B7D91]">
-                                    KivuLingua AI
-                                </h3>
-
-                                <p className="text-xs text-black/50">
-                                    Community-led African Language AI
-                                </p>
-                            </div>
-                        </div>
-
-                        <p className="mt-4 text-sm leading-6 text-black/60">
+                        <p className="text-sm leading-6 text-black/60">
                             Building open speech AI and linguistic datasets for underrepresented Bantu languages across Eastern Congo through community collaboration and scientific excellence.
                         </p>
                     </div>
@@ -118,33 +153,29 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Partners */}
-                <div className="mt-12 border-t border-black/5 pt-8">
-                    <h4 className="font-bold text-black mb-6">Project Consortium Partners</h4>
-                    <div className="flex flex-wrap gap-8 items-center">
-                        <div className="flex items-center gap-3">
-                            <Image
-                                src="/Patners/stem-rh-logo.png"
-                                alt="African STEM Resources Hub"
-                                width={140}
-                                height={70}
-                                className="object-contain h-14 w-auto"
-                            />
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <Image
-                                src="/Patners/kwetubest-blue 1.png"
-                                alt="Kwetu Best Technologies"
-                                width={140}
-                                height={70}
-                                className="object-contain h-14 w-auto"
-                            />
-                        </div>
+                {/* Partners - Same Size Logos */}
+                <div className="mt-12 pt-8 border-t border-black/5">
+                    <h4 className="font-bold text-black mb-8">Project Partners</h4>
+                    <div className="flex flex-wrap gap-12 items-center justify-start">
+                        <Image
+                            src="/Patners/stem-rh-logo.png"
+                            alt="African STEM Resources Hub"
+                            width={160}
+                            height={80}
+                            className="object-contain h-20 w-auto"
+                        />
+                        <Image
+                            src="/Patners/kwetubest-blue 1.png"
+                            alt="Kwetu Best Technologies"
+                            width={160}
+                            height={80}
+                            className="object-contain h-20 w-auto"
+                        />
                     </div>
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-8 border-t border-black/5 pt-8 text-center text-sm text-black/50">
+                <div className="mt-12 pt-8 border-t border-black/5 text-center text-sm text-black/50">
                     © 2026 KivuLingua AI — Preserving African Languages Through Open Science
                 </div>
             </div>
