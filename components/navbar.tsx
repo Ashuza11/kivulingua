@@ -36,8 +36,8 @@ export default function Navbar() {
                     <Image
                         src="/kivulinguaAI_logo.svg"
                         alt="KivuLingua Logo"
-                        width={48}
-                        height={48}
+                        width={64}
+                        height={64}
                         className="object-contain"
                     />
                 </Link>

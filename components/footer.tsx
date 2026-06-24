@@ -12,48 +12,19 @@ export default function Footer() {
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
 
     return (
-        <footer className="relative bg-white py-16">
-            {/* Curvy Animated Separator */}
-            <div className="absolute top-0 left-0 right-0 h-16 -translate-y-full">
-                <svg
-                    viewBox="0 0 1200 60"
-                    className="w-full h-full"
-                    preserveAspectRatio="none"
-                >
-                    <path
-                        d="M0,30 Q300,10 600,30 T1200,30"
-                        fill="none"
-                        stroke="url(#gradient)"
-                        strokeWidth="3"
-                        className="animate-pulse-subtle"
-                    />
-                    <defs>
-                        <linearGradient
-                            id="gradient"
-                            x1="0%"
-                            y1="0%"
-                            x2="100%"
-                            y2="0%"
-                        >
-                            <stop
-                                offset="0%"
-                                stopColor="#3B7D91"
-                                stopOpacity="0.3"
-                            />
-                            <stop
-                                offset="50%"
-                                stopColor="#D4A574"
-                                stopOpacity="0.6"
-                            />
-                            <stop
-                                offset="100%"
-                                stopColor="#3B7D91"
-                                stopOpacity="0.3"
-                            />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+        <footer className="relative bg-white pt-16 pb-16">
+            {/* Thin Bouncing Border Separator */}
+            <style>{`
+                @keyframes gentleBounce {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-2px); }
+                }
+                .footer-border {
+                    animation: gentleBounce 2s ease-in-out infinite;
+                }
+            `}</style>
+
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#3B7D91]/30 via-[#D4A574]/60 to-[#3B7D91]/30 footer-border" />
 
             <div className="mx-auto max-w-7xl px-6">
                 <div className="grid gap-12 md:grid-cols-4">
@@ -154,7 +125,7 @@ export default function Footer() {
                 </div>
 
                 {/* Partners - Same Size Logos */}
-                <div className="mt-12 pt-8 border-t border-black/5">
+                <div className="mt-12 pt-8">
                     <h4 className="font-bold text-black mb-8">Project Partners</h4>
                     <div className="flex flex-wrap gap-12 items-center justify-start">
                         <Image
@@ -162,21 +133,21 @@ export default function Footer() {
                             alt="African STEM Resources Hub"
                             width={160}
                             height={80}
-                            className="object-contain h-20 w-auto"
+                            className="object-contain h-12 w-auto"
                         />
                         <Image
                             src="/Patners/kwetubest-blue 1.png"
                             alt="Kwetu Best Technologies"
                             width={160}
                             height={80}
-                            className="object-contain h-20 w-auto"
+                            className="object-contain h-12 w-auto"
                         />
                     </div>
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-12 pt-8 border-t border-black/5 text-center text-sm text-black/50">
-                    © 2026 KivuLingua AI — Preserving African Languages Through Open Science
+                <div className="mt-12 pt-8 text-center text-sm text-black/50">
+                    © 2026 KivuLingua AI. Preserving African Languages Through Open Science
                 </div>
             </div>
         </footer>
