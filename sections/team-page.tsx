@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Mail, Globe, Building2 } from "lucide-react";
 import { useState } from "react";
@@ -12,6 +13,7 @@ const teamMembers = [
         bio: "Software engineer and AI specialist in Audio AI, TTS, and NLP for low-resource languages. Consultant on AIAM (AI & African Music). Founder of African STEM Resources Hub developing BongoLab (offline STEM labs) and Ntina (multilingual STEM knowledge base).",
         expertise: ["Audio AI", "TTS", "NLP", "Educational AI", "Edge Computing"],
         email: "ashuzamh@gmail.com",
+        image: "/Team/ashuza.jpeg",
     },
     {
         name: "David Krame",
@@ -33,6 +35,7 @@ const teamMembers = [
         organization: "KivuLingua AI",
         bio: "Master's in Machine Intelligence (AIMS/AMMI). 5+ years designing large-scale AI systems in agriculture, finance, and HR. Production expertise: PyTorch, JAX, FastAPI, AWS, GCP. Specializes in multilingual NLP and low-latency pipelines.",
         expertise: ["PyTorch", "JAX", "FastAPI", "AWS/GCP", "Multilingual NLP"],
+        image: "/Team/ciruza.jfif",
     },
     {
         name: "Marius Nshombo",
@@ -41,6 +44,7 @@ const teamMembers = [
         bio: "Curator of Muruhula.com (comprehensive digital Mashi-French library). 8+ years documenting, preserving and providing digital access to Mashi. Deep expertise in grammar, vocabulary, cultural context, and linguistic practice.",
         expertise: ["Mashi Language", "Linguistics", "Documentation", "Community Validation"],
         website: "https://muruhula.com",
+        image: "/Team/Marius.png",
     },
     {
         name: "Prof. Gervais Chirhalwirwha Nkunzimwami",
@@ -152,13 +156,26 @@ export default function TeamPage() {
                                 <div className="p-6">
                                     <div className="flex items-start justify-between gap-4">
                                         <div className="flex-1">
-                                            <div className="flex items-center gap-3 mb-2">
-                                                <h3 className="text-lg font-bold">{member.name}</h3>
-                                                <span className="text-xs font-semibold px-3 py-1 bg-[#3B7D91]/10 text-[#3B7D91] rounded-full">
-                                                    {member.organization}
-                                                </span>
+                                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-2">
+                                                {member.image && (
+                                                    <div className="flex-shrink-0">
+                                                        <Image
+                                                            src={member.image}
+                                                            alt={member.name}
+                                                            width={40}
+                                                            height={40}
+                                                            className="h-10 w-10 rounded-full object-cover border border-[#3B7D91]/20"
+                                                        />
+                                                    </div>
+                                                )}
+                                                <div>
+                                                    <h3 className="text-lg font-bold">{member.name}</h3>
+                                                    <span className="text-xs font-semibold px-3 py-1 bg-[#3B7D91]/10 text-[#3B7D91] rounded-full inline-block mt-1 sm:mt-0 sm:ml-2">
+                                                        {member.organization}
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <p className="text-[#3B7D91] font-semibold text-sm mb-2">{member.role}</p>
+                                            <p className="text-[#3B7D91] font-semibold text-sm mb-2 ml-0 sm:ml-12">{member.role}</p>
 
                                             {expandedMember === member.name && (
                                                 <div className="mt-4 pt-4 border-t border-black/5">

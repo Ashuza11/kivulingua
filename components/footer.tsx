@@ -16,10 +16,11 @@ export default function Footer() {
                     <div className="md:col-span-2">
                         <div className="flex items-center gap-4 mb-4">
                             <Image
-                                src="/logowhite.png"
+                                src="/kivuliguaAI_logo.svg"
                                 alt="KivuLingua Logo"
                                 width={60}
                                 height={60}
+                                className="object-contain"
                             />
 
                             <div>
@@ -117,8 +118,33 @@ export default function Footer() {
                     </div>
                 </div>
 
+                {/* Partners */}
+                <div className="mt-12 border-t border-black/5 pt-8">
+                    <h4 className="font-bold text-black mb-6">Project Consortium Partners</h4>
+                    <div className="flex flex-wrap gap-8 items-center">
+                        <div className="flex items-center gap-3">
+                            <Image
+                                src="/Patners/stem-rh-logo.png"
+                                alt="African STEM Resources Hub"
+                                width={140}
+                                height={70}
+                                className="object-contain h-14 w-auto"
+                            />
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <Image
+                                src="/Patners/kwetubest-blue 1.png"
+                                alt="Kwetu Best Technologies"
+                                width={140}
+                                height={70}
+                                className="object-contain h-14 w-auto"
+                            />
+                        </div>
+                    </div>
+                </div>
+
                 {/* Copyright */}
-                <div className="mt-12 border-t border-black/5 pt-8 text-center text-sm text-black/50">
+                <div className="mt-8 border-t border-black/5 pt-8 text-center text-sm text-black/50">
                     © 2026 KivuLingua AI — Preserving African Languages Through Open Science
                 </div>
             </div>
