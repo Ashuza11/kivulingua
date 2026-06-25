@@ -190,5 +190,71 @@
         "badge": "Meet Our Team",
         "title": "Leadership Driving Language Preservation",
         "description": "Our interdisciplinary team combines expertise in artificial intelligence, machine learning, and indigenous language documentation to build sustainable infrastructure for African language technologies."
+    },
+    "Overview": {
+        "badge": "Project Overview",
+        "title": "Explore Our Work",
+        "description": "KivuLingua AI is building open infrastructure for Eastern Congo's Bantu languages. Click below to learn more about each area.",
+        "sections": [
+            {
+                "title": "Education Impact",
+                "description": "Teaching at the Right Level (TaRL) literacy programs in mother-tongue Mashi for 500+ students across rural Bushi schools."
+            },
+            {
+                "title": "Community Health",
+                "description": "Voice-based mobile app for 30+ health workers delivering prevention messages and recording patient data offline in Mashi."
+            },
+            {
+                "title": "AI Models",
+                "description": "Edge-optimized ASR and TTS models for Mashi (CPU-only, offline deployment on Android and low-cost devices)."
+            },
+            {
+                "title": "Community Team",
+                "description": "Interdisciplinary team of AI engineers, linguists, and community leaders. Consortium with African STEM Resources Hub & Kwetu Best."
+            },
+            {
+                "title": "8 Bantu Languages",
+                "description": "Scalable approach: Pilot with Mashi, document kinande/kihunde/kifuliru in Phase 1, expand to 8 languages in Phase 2."
+            },
+            {
+                "title": "12-Month Timeline",
+                "description": "Structured implementation from July 2026 to June 2027: Foundation → Collection → Processing → Deployment & Publication."
+            },
+            {
+                "title": "Ethics First",
+                "description": "Community sovereignty before openness. Informed consent, gender balance, conflict-sensitive protocols, data governance."
+            },
+            {
+                "title": "Open Science",
+                "description": "All resources (corpus, models, tools) published under Apache 2.0 on Hugging Face, GitHub, and Zenodo as African digital public goods."
+            }
+        ],
+        "learnMore": "Learn more",
+        "cta": {
+            "title": "Ready to Get Involved?",
+            "description": "We welcome linguists, ML engineers, educators, health workers, and community advocates. Whether you want to contribute data, collaborate on research, or support our mission, join us.",
+            "joinButton": "Join Our Community",
+            "contactButton": "Contact Us"
+        }
+    },
+    "Footer": {
+        "description": "Building open speech AI and linguistic datasets for underrepresented Bantu languages across Eastern Congo through community collaboration and scientific excellence.",
+        "contact": {
+            "title": "Contact",
+            "email": "ashuzamh@gmail.com",
+            "phone": "+250 782 672 288",
+            "whatsapp": "WhatsApp"
+        },
+        "follow": {
+            "title": "Follow Us",
+            "website": "Visit Website",
+            "github": "→ GitHub",
+            "linkedin": "→ LinkedIn"
+        },
+        "copyright": "© 2026 KivuLingua AI. Preserving African Languages Through Open Science"
+    },
+    "Partners": {
+        "title": "Project Partners",
+        "description": "Working together to build sustainable infrastructure for African language technologies"
     }
 }
