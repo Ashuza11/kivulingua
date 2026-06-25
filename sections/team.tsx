@@ -263,9 +263,8 @@ export default function Team() {
                   {/* Expand Icon */}
                   <ChevronDown
                     size={20}
-                    className={`text-black/40 transition-transform ${
-                      expandedMember === index ? "rotate-180" : ""
-                    }`}
+                    className={`text-black/40 transition-transform ${expandedMember === index ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
 
