@@ -48,8 +48,143 @@
         "cta": "Rejoignez Notre Initiative"
     },
     "Roadmap": {
-        "title": "Expansion Stratégique: Construction d'Infrastructure IA Linguistique Africaine",
-        "description": "KivuLingua AI avance par phases participatives, priorisant la fondation, développement des modèles, scaling de l'infrastructure et intégration écosystémique. Chaque jalon élargit la couverture linguistique, capacités techniques et partenariats tout en maintenant l'engagement envers la science ouverte et la souveraineté numérique."
+        "title": "Chronologie de mise en œuvre sur 12 mois (Jul 2026 - Jun 2027)",
+        "description": "Notre feuille de route stratégique intègre la collecte continue de données, le développement des modèles, les pilotes éducatifs et sanitaires, et la publication dans l'écosystème ouvert. Chaque phase s'appuie sur la participation communautaire, les protocoles éthiques et l'impact mesurable dans les cas d'usage réels."
+    },
+    "Objectives": {
+        "title": "Objectifs Stratégiques",
+        "description": "KivuLingua AI s'engage à construire la première infrastructure ouverte, éthique et durable pour les données vocales et les modèles IA pour le Mashi, reproductible sur toutes les langues bantoues de la région du Kivu.",
+        "goals": [
+            {
+                "title": "Collecter les Données Vocales Ouvertes",
+                "description": "Rassembler et publier au moins 250 heures de corpus vocal Mashi validé, équilibré par genre, âge et variante dialectale de 200+ locuteurs natifs"
+            },
+            {
+                "title": "Développer une ASR Open-Source",
+                "description": "Créer un modèle ASR optimisé pour les appareils mobiles pour le Mashi (CPU uniquement, hors ligne, <1B paramètres) utilisant Whisper, wav2vec 2.0 et MMS"
+            },
+            {
+                "title": "Développer un Système TTS",
+                "description": "Construire un modèle TTS initial pour le Mashi utilisant Coqui TTS pour la synthèse vocale accessible et la génération de contenu éducatif"
+            },
+            {
+                "title": "Déployer un Pilote Éducatif",
+                "description": "Implémenter le programme d'alphabétisation Teaching at the Right Level (TaRL) dans 5+ écoles rurales de Bushi servant 500+ étudiants dans l'éducation en langue maternelle"
+            },
+            {
+                "title": "Déployer un Pilote Sanitaire",
+                "description": "Équiper 30+ agents de santé communautaire avec une application mobile pour la collecte de données vocales hors ligne dans les régions où l'on parle le Mashi"
+            },
+            {
+                "title": "Construire un Pipeline Reproductible",
+                "description": "Créer une infrastructure ouverte documentée permettant l'extension rentable à 8 autres langues bantoues du Kivu en Phase 2"
+            },
+            {
+                "title": "Former les Contributeurs Communautaires",
+                "description": "Renforcer les capacités de 50+ collecteurs de données, transcripteurs et validateurs locaux dans les pratiques éthiques et les normes de qualité"
+            },
+            {
+                "title": "Publier Toutes les Ressources",
+                "description": "Publier le corpus, les modèles, les outils et les benchmarks sous Apache 2.0 sur Hugging Face, Zenodo et GitHub en tant que biens publics numériques africains"
+            }
+        ]
+    },
+    "UseCases": {
+        "title": "Impact Réel Grâce à l'Éducation et la Santé",
+        "description": "Les ressources KivuLingua AI servent directement deux cas d'usage à fort impact qui ancrent la stratégie entière de collecte de données.",
+        "cases": [
+            {
+                "icon": "BookOpen",
+                "title": "Éducation à la Littératie (TaRL)",
+                "description": "Approche Teaching at the Right Level (TaRL) en Mashi langue maternelle pour les écoles rurales de Bushi. Les enfants apprennent à lire dans leur langue natale avec du contenu audio alimenté par l'IA via la plateforme Ntina.",
+                "impact": "500+ étudiants, 5 écoles, amélioration mesurable de la littératie fondamentale"
+            },
+            {
+                "icon": "Heart",
+                "title": "Santé Communautaire",
+                "description": "Les agents de santé communautaire utilisent une application mobile basée sur la voix pour diffuser des messages de prévention en Mashi (vaccination, santé maternelle, nutrition) et enregistrer les données des patients hors ligne dans l'Est rural de la RDC.",
+                "impact": "30+ agents de santé, 1 500+ ménages atteints indirectement"
+            }
+        ]
+    },
+    "DataCollection": {
+        "title": "Collecte de Données Éthique et Continue",
+        "description": "Notre approche va au-delà des campagnes de collecte ponctuelles. Suivant le cadre de datafication de Fendji, nous construisons une infrastructure où les enseignants et agents de santé génèrent naturellement des données vocales contextualisées par les interactions quotidiennes.",
+        "approach": "Infrastructure Avant Annotation: Déployer d'abord l'application mobile, laisser les workflows naturels générer les données. La transcription suit, pas l'inverse.",
+        "dataTypes": [
+            {
+                "type": "Parole Lue (40%)",
+                "description": "Textes contrôlés - contenu éducatif, messages de santé, proverbes"
+            },
+            {
+                "type": "Conversations Spontanées (25%)",
+                "description": "Dialogues semi-dirigés dans les contextes éducatifs et sanitaires"
+            },
+            {
+                "type": "Narratives Orales (20%)",
+                "description": "Histoires, témoignages, traditions culturelles"
+            },
+            {
+                "type": "Contenu Fonctionnel (15%)",
+                "description": "Instructions d'enseignement, messages de prévention, formulaires de patients"
+            }
+        ]
+    },
+    "Technology": {
+        "title": "Modèles et Outils Open-Source",
+        "description": "Nous développons des systèmes IA prêts pour la production utilisant des frameworks open-source éprouvés, optimisés pour le déploiement hors ligne dans les contextes aux ressources limitées.",
+        "components": [
+            {
+                "title": "Modèle ASR (Reconnaissance Vocale)",
+                "description": "Whisper, wav2vec 2.0 et MMS affinés pour le Mashi. Optimisé pour Edge: <1B paramètres, CPU uniquement, <2x temps réel sur appareils Android bas de gamme",
+                "metric": "WER Cible < 25%"
+            },
+            {
+                "title": "Modèle TTS (Synthèse Vocale)",
+                "description": "Coqui TTS entraîné sur le corpus Mashi pour la synthèse vocale dans les applications éducatives et sanitaires",
+                "metric": "MOS Cible > 3.5 (évaluation communautaire)"
+            },
+            {
+                "title": "Application Mobile de Collecte",
+                "description": "Co-développée avec Kwetu Best Technologies. Application Android pour la capture vocale hors ligne, intégration de transcription et génération automatique de données linguistiques",
+                "metric": "Déployée avec 30 agents de santé + 5 écoles"
+            },
+            {
+                "title": "Pipeline Reproductible",
+                "description": "Ensemble complète open-source: scripts d'annotation, assurance qualité, benchmarks d'évaluation, documentation—prêt pour 8 langues supplémentaires du Kivu",
+                "metric": "Publié sur GitHub sous Apache 2.0"
+            }
+        ]
+    },
+    "Ethics": {
+        "title": "Éthique, Gouvernance et Souveraineté Communautaire",
+        "description": "Le contrôle communautaire des données linguistiques précède l'accès ouvert. Nous priorisons le consentement éclairé, la gouvernance éthique et le partage des avantages significatif.",
+        "principles": [
+            {
+                "principle": "Souveraineté Avant Ouverture",
+                "description": "Le conseil communautaire Mashi (Matabaro, Nshombo, Prof. Nkunzimwami) valide tous les conditions d'accès aux données avant la publication"
+            },
+            {
+                "principle": "Infrastructure Avant Annotation",
+                "description": "Construire des systèmes durables où la génération de données est continue et centrée sur la communauté, pas des campagnes ponctuelles"
+            },
+            {
+                "principle": "Continuité Avant Exhaustivité",
+                "description": "Prioriser un flux de données robuste en cours sur la tentative de couverture linguistique complète en isolation"
+            },
+            {
+                "principle": "Consentement Informé",
+                "description": "Formulaires de consentement bilingues (Mashi/Français), droit explicite de retrait, anonymisation des données personnelles"
+            },
+            {
+                "principle": "Équilibre Genre et Diversité",
+                "description": "Minimum 50% de contributeurs femmes dans la collecte, couvrant les âges 15-65 et 4+ zones géographiques"
+            },
+            {
+                "principle": "Approche Sensible aux Conflits",
+                "description": "Sécurité des participants priorisée. Les données ne sont jamais utilisées pour la surveillance. Aucune collecte dans les zones de conflit actif"
+            }
+        ]
     },
     "Team": {
         "badge": "Rencontrez Notre Équipe",

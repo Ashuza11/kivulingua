@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail, ExternalLink, ChevronDown, Building2 } from "lucide-react";
+import { useState } from "react";
 
 export default function Team() {
+  const [expandedMember, setExpandedMember] = useState<number | null>(0);
   const organizations = [
     {
       name: "African STEM Resources Hub",
       location: "Kigali, Rwanda",
-      role: "Lead Organization",
-      description: "Develops offline EdTech solutions & educational AI platforms to democratize access to quality education. Empowers teachers and students with STEM tools.",
+      description: "Research-led AI EdTech startup developing an evolving ecosystem of offline-first virtual laboratories, mother-tongue knowledge bases, and immersive AI tools that eliminate infrastructure and linguistic barriers, empowering every learner to master and discover science in their own context.",
       focus: ["Educational AI", "STEM Infrastructure", "BongoLab", "Ntina"],
       website: "https://stemrh.org/",
       color: "#3B7D91",
@@ -17,9 +18,8 @@ export default function Team() {
     {
       name: "Kwetu Best Technologies SARL",
       location: "Goma, Democratic Republic of Congo",
-      role: "Co-Technical Partner",
       description: "Digital solutions & transformation specialist supporting businesses & communities through innovative services. 6+ years driving sustainable impact across Africa.",
-      focus: ["Mobile App", "Field Operations", "Digital Transformation", "Software Dev", "AI", "IT Consulting"],
+      focus: ["Sofia", "CulturaZik AI", "Manufact", "MaShop"],
       website: "https://kwetubest.com/",
       color: "#D4A574",
     },
@@ -29,8 +29,9 @@ export default function Team() {
     {
       name: "Muhigiri Ashuza Albin",
       org: "African STEM Resources Hub",
-      role: "Technical Lead & AI Specialist",
+      role: "AI Engineer, Partnerships and Grants, Project Management",
       specialization: "Audio AI, Generative Models, Educational AI Systems, Microsoft Learn Ambassador",
+      image: "/Team/ashuza.jpeg",
       links: [
         { label: "GitHub", url: "https://github.com/Ashuza11" },
         { label: "LinkedIn", url: "https://www.linkedin.com/in/m-ashuza/" },
@@ -41,11 +42,13 @@ export default function Team() {
     {
       name: "David Krame",
       org: "African STEM Resources Hub",
-      role: "Co-Founder, Research & Model Optimization",
-      specialization: "ML Research, Model Optimization, PhD Candidate (VU Amsterdam)",
+      role: "Research & Model Optimization",
+      specialization: "ML Research, Model Optimization, PhD Candidate (VU Amsterdam), Stochastic Optimization",
       links: [
+        { label: "Website", url: "https://davidkrame.github.io/" },
+        { label: "Google Scholar", url: "https://scholar.google.com/citations?user=davidkrame" },
+        { label: "GitHub", url: "https://github.com/DavidKrame" },
         { label: "VU Amsterdam", url: "https://vu.nl/en/" },
-        { label: "STEM Hub", url: "https://stemrh.org/" },
       ],
     },
     {
@@ -62,14 +65,19 @@ export default function Team() {
       name: "Ciruza Alain",
       org: "KivuLingua AI",
       role: "AI Architect & ML Infrastructure",
-      specialization: "Deep Learning, NLP, Cloud Infrastructure, PyTorch, JAX, Production ML",
-      links: [],
+      specialization: "Deep Learning, NLP, Cloud Infrastructure, PyTorch, JAX, AMMI Student",
+      image: "/Team/ciruza.jfif",
+      links: [
+        { label: "LinkedIn", url: "https://www.linkedin.com/in/mcalino/" },
+        { label: "GitHub", url: "https://github.com/Cirhuzalain" },
+      ],
     },
     {
       name: "Marius Nshombo",
       org: "Muruhula.com",
       role: "Mashi Language Custodian & Validation Lead",
       specialization: "Mashi Lexicon, Language Documentation, 8+ Years Preservation, BND-French Bilingual Resource",
+      image: "/Team/Marius.png",
       links: [
         { label: "Muruhula", url: "https://muruhula.com/" },
         { label: "Facebook", url: "https://www.facebook.com/nshombo/" },
@@ -82,6 +90,7 @@ export default function Team() {
       role: "Linguistic Advisor & Community Leader",
       specialization: "Bantu Linguistics, Mashi Language, Cultural Preservation, Community Engagement",
       links: [
+        { label: "Podcast", url: "https://www.youtube.com/watch?v=k4OPtQwmb5w&list=PLoqQ2twxUxB5lKlNX8Nm2C__0AckCkrvn&index=10" },
         { label: "BNF", url: "https://www.bnf.fr/" },
       ],
     },
@@ -110,13 +119,14 @@ export default function Team() {
     },
     {
       name: "Dr. Joaquim Mbasa",
-      org: "ISTI-CNR, Pisa",
+      org: "Kwetu Best / ISTI-CNR, Pisa",
       role: "Distributed Systems & Data Architecture",
       specialization: "Cloud/Edge Computing, Knowledge Distillation, Federated Learning, Computer Vision, 6+ Publications",
       links: [
         { label: "Google Scholar", url: "https://scholar.google.com/citations?user=mbasa" },
         { label: "LinkedIn", url: "https://www.linkedin.com/in/joaquim-mbasa-7934611b4/" },
         { label: "ISTI-CNR", url: "https://www.isti.cnr.it/en/" },
+        { label: "Kwetu Best", url: "https://kwetubest.com/" },
       ],
     },
   ];
@@ -147,51 +157,58 @@ export default function Team() {
             {organizations.map((org, index) => (
               <div
                 key={org.name}
-                className="rounded-2xl border border-black/5 bg-white p-8 animate-fade-in-up hover:shadow-lg transition"
+                className="rounded-2xl border border-black/10 bg-white animate-fade-in-up hover:shadow-lg transition p-6 flex gap-6"
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                <div className="flex items-start justify-between mb-4">
+                {/* Icon Container - Left */}
+                <div className="flex-shrink-0">
+                  <div
+                    className="w-16 h-16 rounded-lg flex items-center justify-center"
+                    style={{ backgroundColor: `${org.color}20` }}
+                  >
+                    <Building2 size={28} style={{ color: org.color }} />
+                  </div>
+                </div>
+
+                {/* Content - Right */}
+                <div className="flex-grow space-y-3">
                   <div>
-                    <h4 className="text-xl font-bold text-black">
+                    <h4 className="text-lg font-bold text-black">
                       {org.name}
                     </h4>
-                    <p className="text-sm text-black/50 mt-1">
+                    <p className="text-xs text-black/50 mt-0.5">
                       {org.location}
                     </p>
                   </div>
-                  <span
-                    className="px-3 py-1 rounded-full text-xs font-semibold text-white"
-                    style={{ backgroundColor: org.color }}
-                  >
-                    {org.role}
-                  </span>
-                </div>
 
-                <p className="text-sm leading-6 text-black/70 mb-4">
-                  {org.description}
-                </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {org.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {org.focus.map((item) => (
-                    <span
-                      key={item}
-                      className="px-2 py-1 rounded text-xs font-medium text-black/60 bg-black/5"
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    {org.focus.map((item) => (
+                      <span
+                        key={item}
+                        className="px-2.5 py-1 rounded-full text-xs font-medium text-black/70 border"
+                        style={{ borderColor: org.color, backgroundColor: `${org.color}10` }}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  {org.website && (
+                    <a
+                      href={org.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium hover:opacity-70 transition pt-1"
+                      style={{ color: org.color }}
                     >
-                      {item}
-                    </span>
-                  ))}
+                      Visit <ExternalLink size={12} />
+                    </a>
+                  )}
                 </div>
-
-                {org.website && (
-                  <a
-                    href={org.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#3B7D91] transition"
-                  >
-                    Visit Website <ExternalLink size={14} />
-                  </a>
-                )}
               </div>
             ))}
           </div>
@@ -201,47 +218,89 @@ export default function Team() {
         <div className="mb-20">
           <h3 className="text-2xl font-bold mb-8">Core Team</h3>
 
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-3">
             {coreTeam.map((member, index) => (
               <div
                 key={member.name}
-                className="rounded-2xl border border-black/5 bg-white p-6 animate-fade-in-up hover:shadow-lg transition"
+                className="rounded-2xl border border-black/5 bg-white animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${0.1 + index * 0.08}s` }}
               >
-                {/* Avatar placeholder */}
-                <div className="w-full h-32 rounded-xl bg-gradient-to-br from-[#3B7D91]/20 to-[#D4A574]/20 flex items-center justify-center mb-4 text-3xl font-bold text-[#3B7D91]/30">
-                  {member.name.split(" ").slice(0, 2).map(n => n[0]).join("")}
-                </div>
+                {/* Collapsed Header - Always Visible */}
+                <button
+                  onClick={() => setExpandedMember(expandedMember === index ? null : index)}
+                  className="w-full p-6 flex items-center gap-4 hover:bg-gray-50/50 transition text-left"
+                >
+                  {/* Avatar */}
+                  <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-gradient-to-br from-[#3B7D91]/20 to-[#D4A574]/20 flex items-center justify-center">
+                    {member.image ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-2xl font-bold text-[#3B7D91]/30">
+                        {member.name.split(" ").slice(0, 2).map(n => n[0]).join("")}
+                      </span>
+                    )}
+                  </div>
 
-                <h4 className="font-bold text-black text-sm">
-                  {member.name}
-                </h4>
+                  {/* Info */}
+                  <div className="flex-grow">
+                    <h4 className="font-bold text-black text-base">
+                      {member.name}
+                    </h4>
+                    <p className="text-xs text-black/50 mt-0.5">
+                      {member.org}
+                    </p>
+                    <p className="text-sm font-semibold text-[#3B7D91] mt-1">
+                      {member.role}
+                    </p>
+                  </div>
 
-                <p className="text-xs text-black/50 mt-1">
-                  {member.org}
-                </p>
+                  {/* Expand Icon */}
+                  <ChevronDown
+                    size={20}
+                    className={`text-black/40 transition-transform ${
+                      expandedMember === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-                <p className="text-sm font-semibold text-[#3B7D91] mt-2">
-                  {member.role}
-                </p>
+                {/* Expanded Details */}
+                {expandedMember === index && (
+                  <div className="border-t border-black/5 px-6 py-4 bg-gradient-to-b from-white to-gray-50/50 space-y-4 animate-fade-in-up">
+                    <div>
+                      <h5 className="text-xs font-bold uppercase text-black/50 mb-2">
+                        Specialization
+                      </h5>
+                      <p className="text-sm text-black/70">
+                        {member.specialization}
+                      </p>
+                    </div>
 
-                <p className="text-xs text-black/60 mt-2 leading-5">
-                  {member.specialization}
-                </p>
-
-                {member.links.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {member.links.map((link) => (
-                      <a
-                        key={link.url}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-2 py-1 rounded text-xs font-medium text-white bg-[#3B7D91] hover:bg-[#2D6478] transition"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
+                    {member.links.length > 0 && (
+                      <div>
+                        <h5 className="text-xs font-bold uppercase text-black/50 mb-2">
+                          Links & Resources
+                        </h5>
+                        <div className="flex flex-wrap gap-2">
+                          {member.links.map((link) => (
+                            <a
+                              key={link.url}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1.5 rounded text-xs font-medium text-white bg-[#3B7D91] hover:bg-[#2D6478] transition"
+                            >
+                              {link.label}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
