@@ -2,31 +2,33 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+
+const partners = [
+  {
+    name: "African STEM Resources Hub",
+    image: "/Partners/stem-rh-logo.png",
+  },
+  {
+    name: "Kwetu Best Technologies",
+    image: "/Partners/kwetubest.png",
+  },
+];
 
 export default function Partners() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const partners = [
-    {
-      name: "African STEM Resources Hub",
-      image: "/Partners/stem-rh-logo.png",
-    },
-    {
-      name: "Kwetu Best Technologies",
-      image: "/Partners/kwetubest.png",
-    },
-  ];
+  const t = useTranslations("Partners");
 
   return (
     <section className="py-28 bg-white">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-3xl animate-fade-in-up mb-16">
           <h2 className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
-            Project Partners
+            {t("title")}
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-black/70">
-            Working together to build sustainable infrastructure for African language technologies
+            {t("description")}
           </p>
         </div>
 

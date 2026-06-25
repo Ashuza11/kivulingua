@@ -190,5 +190,71 @@
         "badge": "Rencontrez Notre Équipe",
         "title": "Leadership pour la Préservation Linguistique",
         "description": "Notre équipe interdisciplinaire combine l'expertise en intelligence artificielle, apprentissage automatique et documentation de langues autochtones pour construire une infrastructure durable pour les technologies linguistiques africaines."
+    },
+    "Overview": {
+        "badge": "Aperçu du Projet",
+        "title": "Explorez Notre Travail",
+        "description": "KivuLingua AI construit une infrastructure ouverte pour les langues bantoues de l'Est du Congo. Cliquez ci-dessous pour en savoir plus sur chaque domaine.",
+        "sections": [
+            {
+                "title": "Impact Éducatif",
+                "description": "Programmes d'alphabétisation Teaching at the Right Level (TaRL) en langue maternelle Mashi pour 500+ étudiants à travers les écoles rurales de Bushi."
+            },
+            {
+                "title": "Santé Communautaire",
+                "description": "Application mobile basée sur la voix pour 30+ agents de santé livrant des messages de prévention et enregistrant les données des patients hors ligne en Mashi."
+            },
+            {
+                "title": "Modèles IA",
+                "description": "Modèles ASR et TTS optimisés pour les appareils mobiles pour le Mashi (CPU uniquement, déploiement hors ligne sur Android et appareils bas de gamme)."
+            },
+            {
+                "title": "Équipe Communautaire",
+                "description": "Équipe interdisciplinaire d'ingénieurs IA, de linguistes et de leaders communautaires. Consortium avec African STEM Resources Hub & Kwetu Best."
+            },
+            {
+                "title": "8 Langues Bantoues",
+                "description": "Approche évolutive: Pilot avec Mashi, document kinande/kihunde/kifuliru en Phase 1, expansion à 8 langues en Phase 2."
+            },
+            {
+                "title": "Chronologie de 12 Mois",
+                "description": "Implémentation structurée de juillet 2026 à juin 2027: Fondation → Collecte → Traitement → Déploiement & Publication."
+            },
+            {
+                "title": "Éthique D'Abord",
+                "description": "Souveraineté communautaire avant ouverture. Consentement informé, équilibre des genres, protocoles sensibles aux conflits, gouvernance des données."
+            },
+            {
+                "title": "Science Ouverte",
+                "description": "Toutes les ressources (corpus, modèles, outils) publiées sous Apache 2.0 sur Hugging Face, GitHub et Zenodo en tant que biens publics numériques africains."
+            }
+        ],
+        "learnMore": "En savoir plus",
+        "cta": {
+            "title": "Prêt à S'impliquer?",
+            "description": "Nous accueillons les linguistes, ingénieurs ML, éducateurs, agents de santé et défenseurs communautaires. Que vous souhaitiez contribuer des données, collaborer à la recherche ou soutenir notre mission, rejoignez-nous.",
+            "joinButton": "Rejoindre Notre Communauté",
+            "contactButton": "Nous Contacter"
+        }
+    },
+    "Footer": {
+        "description": "Construire une IA vocale ouverte et des ensembles de données linguistiques pour les langues bantoues sous-représentées à travers l'Est du Congo grâce à la collaboration communautaire et l'excellence scientifique.",
+        "contact": {
+            "title": "Contact",
+            "email": "ashuzamh@gmail.com",
+            "phone": "+250 782 672 288",
+            "whatsapp": "WhatsApp"
+        },
+        "follow": {
+            "title": "Suivez-Nous",
+            "website": "Visiter le Site Web",
+            "github": "→ GitHub",
+            "linkedin": "→ LinkedIn"
+        },
+        "copyright": "© 2026 KivuLingua AI. Préserver les Langues Africaines Grâce à la Science Ouverte"
+    },
+    "Partners": {
+        "title": "Partenaires du Projet",
+        "description": "Travailler ensemble pour construire une infrastructure durable pour les technologies linguistiques africaines"
     }
 }
