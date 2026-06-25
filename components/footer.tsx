@@ -116,26 +116,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Partners - Same Size Logos */}
-                <div className="mt-12 pt-8">
-                    <h4 className="font-bold text-black mb-8">Project Partners</h4>
-                    <div className="flex flex-wrap gap-12 items-center justify-start">
-                        <Image
-                            src="/Partners/stem-rh-logo.png"
-                            alt="African STEM Resources Hub"
-                            width={160}
-                            height={80}
-                            className="object-contain h-12 w-auto"
-                        />
-                        <Image
-                            src="/Partners/kwetubest-blue-1.png"
-                            alt="Kwetu Best Technologies"
-                            width={130}
-                            height={40}
-                            className="object-contain h-12 w-auto"
-                        />
-                    </div>
-                </div>
 
                 {/* Copyright */}
                 <div className="mt-12 pt-8 text-center text-sm text-black/50">

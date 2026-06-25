@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { ChevronUp } from "lucide-react";
 
 export default function Roadmap() {
     const t = useTranslations("Roadmap");
@@ -14,6 +13,7 @@ export default function Roadmap() {
             title: "Governance Setup",
             color: "#3B7D91",
             icon: "🏗️",
+            position: "top" as const,
             milestones: [
                 "Community council constituted with linguistic guardians",
                 "Ethical protocols and consent frameworks approved",
@@ -26,6 +26,7 @@ export default function Roadmap() {
             title: "Data Collection",
             color: "#D4A574",
             icon: "🎤",
+            position: "bottom" as const,
             milestones: [
                 "150+ hours of Mashi audio collected across regions",
                 "Android mobile app beta deployed to 30 health workers",
@@ -38,6 +39,7 @@ export default function Roadmap() {
             title: "Model Development",
             color: "#5A9FB0",
             icon: "🤖",
+            position: "top" as const,
             milestones: [
                 "250 hours of corpus fully transcribed and validated",
                 "Comparative ASR training: Whisper vs wav2vec 2.0 vs MMS",
@@ -50,6 +52,7 @@ export default function Roadmap() {
             title: "Impact & Scale",
             color: "#3B7D91",
             icon: "🚀",
+            position: "bottom" as const,
             milestones: [
                 "TaRL pilot active in 5 rural Bushi schools (500+ students)",
                 "ASR and TTS models published on Hugging Face",
@@ -61,51 +64,74 @@ export default function Roadmap() {
 
     return (
         <section id="roadmap" className="py-28 bg-gradient-to-b from-white to-[#F8F5F0]">
+            <style>{`
+                @keyframes serpent {
+                    0% { d: path('M 0 50 Q 25 30 50 50 T 100 50'); }
+                    25% { d: path('M 0 50 Q 25 50 50 30 T 100 50'); }
+                    50% { d: path('M 0 50 Q 25 70 50 50 T 100 50'); }
+                    75% { d: path('M 0 50 Q 25 50 50 70 T 100 50'); }
+                    100% { d: path('M 0 50 Q 25 30 50 50 T 100 50'); }
+                }
+                .roadmap-serpent {
+                    animation: serpent 4s ease-in-out infinite;
+                }
+            `}</style>
+
             <div className="mx-auto max-w-7xl px-6">
                 <div className="max-w-3xl mb-20 animate-fade-in-up">
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#3B7D91]">
                         Project Journey
                     </p>
                     <h2 className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
-                        Our 12-Month Implementation Path
+                        Our Implementation Path
                     </h2>
                     <p className="mt-6 text-lg leading-8 text-black/70">
                         {t("description")}
                     </p>
                 </div>
 
-                {/* Visual Road Journey */}
-                <div className="relative py-16">
-                    {/* Road Background */}
-                    <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-b from-[#3B7D91]/5 via-[#D4A574]/10 to-[#5A9FB0]/5 rounded-3xl" />
+                {/* Serpentine Roadmap */}
+                <div className="relative py-32">
+                    {/* SVG Serpentine Line */}
+                    <svg
+                        className="absolute left-0 right-0 top-0 h-full w-full"
+                        style={{ pointerEvents: "none" }}
+                        preserveAspectRatio="none"
+                    >
+                        <polyline
+                            points="0,50 25,30 50,50 75,70 100,50"
+                            fill="none"
+                            stroke="url(#gradient)"
+                            strokeWidth="3"
+                            vectorEffect="non-scaling-stroke"
+                            style={{
+                                strokeDasharray: "1000",
+                                strokeDashoffset: "0",
+                                animation: "draw 3s ease-in-out infinite",
+                            }}
+                        />
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="#3B7D91" />
+                                <stop offset="50%" stopColor="#D4A574" />
+                                <stop offset="100%" stopColor="#5A9FB0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
 
-                    {/* Start Flag */}
-                    <div className="absolute left-6 top-1/2 -translate-y-1/2 animate-fade-in-left">
-                        <div className="text-4xl mb-2">🚩</div>
-                        <p className="text-xs font-bold text-black/60">START</p>
-                    </div>
-
-                    {/* Road with Phases */}
-                    <div className="ml-20 mr-20 relative">
-                        {/* Road Line */}
-                        <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[#3B7D91] via-[#D4A574] to-[#5A9FB0]" />
-
-                        {/* Phase Points */}
-                        <div className="flex justify-between items-stretch relative z-10">
-                            {phases.map((phase, index) => (
-                                <div
-                                    key={phase.phase}
-                                    className="flex flex-col items-center flex-1 animate-fade-in-up"
-                                    style={{ animationDelay: `${0.1 + index * 0.1}s` }}
-                                >
-                                    {/* Checkpoint Circle */}
+                    {/* Phase Checkpoints */}
+                    <div className="relative z-20 flex justify-between items-stretch px-4">
+                        {phases.map((phase, index) => (
+                            <div key={phase.phase} className="flex-1 relative">
+                                {/* Checkpoint Circle */}
+                                <div className="flex justify-center">
                                     <button
                                         onClick={() =>
                                             setExpandedPhase(
                                                 expandedPhase === index ? null : index
                                             )
                                         }
-                                        className="group relative mb-8 focus:outline-none cursor-pointer"
+                                        className="group relative focus:outline-none cursor-pointer"
                                     >
                                         {/* Outer Pulse Ring */}
                                         <div
@@ -115,8 +141,8 @@ export default function Roadmap() {
 
                                         {/* Main Checkpoint */}
                                         <div
-                                            className="w-16 h-16 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300 relative z-20"
-                                            style={{ backgroundColor: phase.color }}
+                                            className="w-16 h-16 rounded-full border-4 border-white shadow-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300 relative"
+                                            style={{ backgroundColor: phase.color, zIndex: 30 }}
                                         >
                                             {phase.icon}
                                         </div>
@@ -132,99 +158,61 @@ export default function Roadmap() {
                                             {phase.title}
                                         </p>
                                     </button>
-
-                                    {/* Expandable Details Panel */}
-                                    {expandedPhase === index && (
-                                        <div
-                                            className="w-72 rounded-2xl border-2 p-6 shadow-xl animate-fade-in-up relative z-30 mt-4"
-                                            style={{
-                                                borderColor: phase.color,
-                                                backgroundColor: `${phase.color}08`,
-                                            }}
-                                        >
-                                            {/* Arrow pointing up */}
-                                            <div
-                                                className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 rotate-45"
-                                                style={{
-                                                    borderTop: `2px solid ${phase.color}`,
-                                                    borderLeft: `2px solid ${phase.color}`,
-                                                    backgroundColor: `${phase.color}08`,
-                                                }}
-                                            />
-
-                                            <div className="flex justify-between items-start mb-4">
-                                                <h4
-                                                    className="font-bold text-lg"
-                                                    style={{ color: phase.color }}
-                                                >
-                                                    {phase.title}
-                                                </h4>
-                                                <button
-                                                    onClick={() => setExpandedPhase(null)}
-                                                    className="flex-shrink-0 p-1 rounded hover:bg-black/5 transition"
-                                                >
-                                                    <ChevronUp
-                                                        size={16}
-                                                        style={{ color: phase.color }}
-                                                    />
-                                                </button>
-                                            </div>
-
-                                            {/* Milestones List */}
-                                            <ul className="space-y-3">
-                                                {phase.milestones.map(
-                                                    (milestone, idx) => (
-                                                        <li
-                                                            key={idx}
-                                                            className="text-sm text-black/70 flex gap-3 animate-fade-in-up"
-                                                            style={{
-                                                                animationDelay: `${idx * 50}ms`,
-                                                            }}
-                                                        >
-                                                            <span
-                                                                className="flex-shrink-0 w-1.5 h-1.5 rounded-full mt-1.5"
-                                                                style={{
-                                                                    backgroundColor:
-                                                                        phase.color,
-                                                                }}
-                                                            />
-                                                            <span>{milestone}</span>
-                                                        </li>
-                                                    )
-                                                )}
-                                            </ul>
-                                        </div>
-                                    )}
                                 </div>
-                            ))}
-                        </div>
+
+                                {/* Expandable Details Panel */}
+                                {expandedPhase === index && (
+                                    <div
+                                        className={`absolute left-1/2 -translate-x-1/2 w-80 rounded-2xl border-2 p-6 shadow-2xl animate-fade-in-up relative z-50 ${
+                                            phase.position === "top" ? "-top-96" : "top-32"
+                                        }`}
+                                        style={{
+                                            borderColor: phase.color,
+                                            backgroundColor: `${phase.color}08`,
+                                        }}
+                                    >
+                                        {/* Arrow pointing to checkpoint */}
+                                        <div
+                                            className={`absolute left-1/2 -translate-x-1/2 w-6 h-6 ${
+                                                phase.position === "top" ? "-bottom-3 rotate-45" : "-top-3 -rotate-45"
+                                            }`}
+                                            style={{
+                                                borderTop: `2px solid ${phase.color}`,
+                                                borderLeft: `2px solid ${phase.color}`,
+                                            }}
+                                        />
+
+                                        <h3 className="font-bold text-black mb-4">
+                                            {phase.title}
+                                        </h3>
+
+                                        <ul className="space-y-2">
+                                            {phase.milestones.map((milestone, i) => (
+                                                <li
+                                                    key={i}
+                                                    className="flex items-start gap-2 text-sm text-black/70"
+                                                >
+                                                    <span
+                                                        className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0"
+                                                        style={{ backgroundColor: phase.color }}
+                                                    />
+                                                    {milestone}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
                     </div>
 
-                    {/* Finish Flag */}
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 animate-fade-in-right">
-                        <div className="text-4xl mb-2">🏁</div>
-                        <p className="text-xs font-bold text-black/60">FINISH</p>
-                    </div>
-                </div>
-
-                {/* Summary Stats */}
-                <div className="mt-20 grid md:grid-cols-4 gap-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-                    {[
-                        { label: "Phases", value: "4" },
-                        { label: "Milestones", value: "16+" },
-                        { label: "Timeline", value: "12 months" },
-                        { label: "Impact", value: "Full Scale" },
-                    ].map((stat, idx) => (
-                        <div
-                            key={idx}
-                            className="text-center p-4 rounded-xl border border-black/5 bg-white"
-                        >
-                            <p className="text-2xl font-bold text-[#3B7D91]">
-                                {stat.value}
-                            </p>
-                            <p className="text-sm text-black/60 mt-1">{stat.label}</p>
-                        </div>
-                    ))}
+                    <style>{`
+                        @keyframes draw {
+                            to {
+                                stroke-dashoffset: -1000;
+                            }
+                        }
+                    `}</style>
                 </div>
             </div>
         </section>
