@@ -11,6 +11,10 @@ export default function AnimatedTitle({ titles }: AnimatedTitleProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  if (!titles || titles.length === 0) {
+    return <div className="text-5xl font-bold md:text-6xl">Loading...</div>;
+  }
+
   const currentTitle = titles[currentIndex];
   const typingSpeed = 50;
   const deletingSpeed = 30;

@@ -32,11 +32,11 @@ export default function Footer() {
                     <div className="md:col-span-2">
                         <Link href={`/${locale}`} className="inline-block mb-6">
                             <Image
-                                src="/kivuliguaAI_logo.svg"
+                                src="/kivulinguaai_logo.svg"
                                 alt="KivuLingua Logo"
-                                width={70}
-                                height={70}
-                                className="object-contain hover:scale-110 transition duration-300"
+                                width={160}
+                                height={80}
+                                className="object-contain h-12 w-auto"
                             />
                         </Link>
 
@@ -96,7 +96,7 @@ export default function Footer() {
 
                             <div className="space-y-2 pt-2">
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/Ashuza11/Kivulinguaai"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
@@ -104,20 +104,12 @@ export default function Footer() {
                                     → GitHub
                                 </a>
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/showcase/kivulingua-ai/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
                                 >
                                     → LinkedIn
-                                </a>
-                                <a
-                                    href="https://twitter.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block text-sm text-black/70 hover:text-[#3B7D91] transition"
-                                >
-                                    → Twitter
                                 </a>
                             </div>
                         </div>
@@ -129,17 +121,17 @@ export default function Footer() {
                     <h4 className="font-bold text-black mb-8">Project Partners</h4>
                     <div className="flex flex-wrap gap-12 items-center justify-start">
                         <Image
-                            src="/Patners/stem-rh-logo.png"
+                            src="/Partners/stem-rh-logo.png"
                             alt="African STEM Resources Hub"
                             width={160}
                             height={80}
                             className="object-contain h-12 w-auto"
                         />
                         <Image
-                            src="/Patners/kwetubest-blue 1.png"
+                            src="/Partners/kwetubest-blue-1.png"
                             alt="Kwetu Best Technologies"
-                            width={160}
-                            height={80}
+                            width={130}
+                            height={40}
                             className="object-contain h-12 w-auto"
                         />
                     </div>

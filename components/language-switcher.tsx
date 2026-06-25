@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { locales, localeNames } from "@/i18n";
 
@@ -12,6 +12,7 @@ const languages = locales.map((code) => ({
 
 export default function LanguageSwitcher() {
     const pathname = usePathname();
+    const router = useRouter();
 
     const localePattern = locales.join("|");
     const pathnameWithoutLocale = pathname.replace(
@@ -50,7 +51,7 @@ export default function LanguageSwitcher() {
                 <select
                     value={currentLocale}
                     onChange={(e) => {
-                        window.location.href = `/${e.target.value}${pathnameWithoutLocale}`;
+                        router.push(`/${e.target.value}${pathnameWithoutLocale}`);
                     }}
                     className="appearance-none rounded-full border border-black/10 bg-white px-4 py-2 pr-10 text-sm font-medium shadow-sm outline-none"
                 >

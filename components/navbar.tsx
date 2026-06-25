@@ -17,7 +17,7 @@ export default function Navbar() {
     const navLinks = [
         { href: `/${locale}/languages`, label: t("languages") },
         { href: `/${locale}/research`, label: t("research") },
-        { href: `/${locale}/team`, label: "Team" },
+        { href: `/${locale}/team`, label: t("team") },
         { href: `/${locale}/community`, label: t("community") },
         { href: `/${locale}/roadmap`, label: t("roadmap") },
     ];
@@ -34,10 +34,10 @@ export default function Navbar() {
 
                 <Link href={`/${locale}`} className="flex items-center gap-2">
                     <Image
-                        src="/kivulinguaAI_logo.svg"
+                        src="/kivulinguaai_logo.svg"
                         alt="KivuLingua Logo"
-                        width={64}
-                        height={64}
+                        width={170}
+                        height={40}
                         className="object-contain"
                     />
                 </Link>
