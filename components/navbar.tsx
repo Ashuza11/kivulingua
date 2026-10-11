@@ -15,11 +15,10 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navLinks = [
-        { href: `/${locale}/languages`, label: t("languages") },
         { href: `/${locale}/research`, label: t("research") },
+        { href: `/${locale}/projects`, label: t("projects") },
         { href: `/${locale}/team`, label: t("team") },
         { href: `/${locale}/community`, label: t("community") },
-        { href: `/${locale}/roadmap`, label: t("roadmap") },
     ];
 
     const isActive = (href: string) => {

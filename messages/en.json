@@ -1,10 +1,9 @@
 {
     "Navbar": {
-        "languages": "Languages",
         "research": "Research",
+        "projects": "Projects",
         "team": "Team",
-        "community": "Community",
-        "roadmap": "Roadmap"
+        "community": "Community"
     },
     "Hero": {
         "badge": "Community-Led African Language AI",
@@ -46,10 +45,6 @@
         "title": "Collaborative Infrastructure for Digital Linguistic Sovereignty",
         "description": "Community participation anchors all KivuLingua AI initiatives. We engage native speakers, teachers, cultural leaders, local radio stations and religious institutions in participatory data collection following international ethical research standards. Linguistic communities co-govern datasets, validate transcriptions, and ensure cultural appropriateness. We prioritize informed consent, data anonymization, and community benefit-sharing while building sustainable African-led AI ecosystems.",
         "cta": "Join Our Initiative"
-    },
-    "Roadmap": {
-        "title": "12-Month Implementation Timeline (Jul 2026 - Jun 2027)",
-        "description": "Our strategic roadmap integrates continuous data collection, model development, educational and health pilots, and open ecosystem publication. Each phase builds on community participation, ethical protocols, and measurable impact in real-world use cases."
     },
     "Objectives": {
         "title": "Strategic Objectives",
@@ -146,7 +141,7 @@
             },
             {
                 "title": "Mobile Collection App",
-                "description": "Co-developed with Kwetu Best Technologies. Android app for offline voice capture, transcription integration, and automatic linguistic data generation",
+                "description": "Android app for offline voice capture, transcription integration, and automatic linguistic data generation",
                 "metric": "Deployed with 30 health workers + 5 schools"
             },
             {
@@ -210,7 +205,7 @@
             },
             {
                 "title": "Community Team",
-                "description": "Interdisciplinary team of AI engineers, linguists, and community leaders. Consortium with African STEM Resources Hub & Kwetu Best."
+                "description": "A focused team of AI researchers, engineers, and Mashi language specialists working with Congolese communities."
             },
             {
                 "title": "8 Bantu Languages",
@@ -238,7 +233,7 @@
         }
     },
     "Footer": {
-        "description": "Building open speech AI and linguistic datasets for underrepresented Bantu languages across Eastern Congo through community collaboration and scientific excellence.",
+        "description": "An African AI research lab building open datasets, benchmarks, maps, and speech technologies with Congolese language communities.",
         "contact": {
             "title": "Contact",
             "email": "ashuzamh@gmail.com",
@@ -251,10 +246,10 @@
             "github": "→ GitHub",
             "linkedin": "→ LinkedIn"
         },
-        "copyright": "© 2026 KivuLingua AI. Preserving African Languages Through Open Science"
+        "copyright": "© 2026 KivuLingua AI Lab. Research, tools, and community knowledge"
     },
     "Partners": {
-        "title": "Project Partners",
-        "description": "Working together to build sustainable infrastructure for African language technologies"
+        "title": "Affiliations and Communities",
+        "description": "Relationships connecting research, culture, learning, and community validation"
     }
 }

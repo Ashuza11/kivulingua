@@ -5,8 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "KivuLingua - African Language AI",
-  description: "Preserving Eastern Congo Bantu languages through AI and community-driven datasets",
+  title: "KivuLingua AI Lab",
+  description: "An African AI research lab building language datasets, benchmarks, maps, and speech technologies with Congolese communities",
   icons: {
     icon: [
       {

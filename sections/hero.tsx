@@ -1,154 +1,60 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { Mic, Database, Languages, Users } from "lucide-react";
-import AnimatedTitle from "@/components/animated-title";
+import Link from "next/link";
+import { useLocale } from "next-intl";
+import { ArrowRight, Database, FlaskConical, Map, Mic2 } from "lucide-react";
+
+const stats = [
+  { value: "3", label: { en: "open research streams", fr: "axes de recherche ouverts" }, icon: FlaskConical },
+  { value: "2", label: { en: "active lab projects", fr: "projets actifs du laboratoire" }, icon: Database },
+  { value: "47", label: { en: "language tracks benchmarked", fr: "langues suivies dans le benchmark" }, icon: Mic2 },
+  { value: "236", label: { en: "language profiles mapped", fr: "profils linguistiques cartographiés" }, icon: Map },
+];
 
 export default function Hero() {
-    const t = useTranslations("Hero");
+  const locale = useLocale() === "fr" ? "fr" : "en";
 
-    return (
-        <section className="relative overflow-hidden pt-40 pb-28">
-
-            {/* Cultural Background Pattern */}
-            <div className="absolute inset-0 opacity-5 pointer-events-none">
-                <svg
-                    viewBox="0 0 1200 600"
-                    className="w-full h-full"
-                    preserveAspectRatio="xMidYMid slice"
-                >
-                    {/* Geometric patterns inspired by African art */}
-                    <defs>
-                        <pattern
-                            id="african-pattern"
-                            x="0"
-                            y="0"
-                            width="100"
-                            height="100"
-                            patternUnits="userSpaceOnUse"
-                        >
-                            <circle cx="50" cy="50" r="10" fill="#3B7D91" />
-                            <path
-                                d="M50 20 L70 50 L50 80 L30 50 Z"
-                                fill="none"
-                                stroke="#D4A574"
-                                strokeWidth="2"
-                            />
-                            <line
-                                x1="20"
-                                y1="50"
-                                x2="80"
-                                y2="50"
-                                stroke="#5A9FB0"
-                                strokeWidth="1"
-                            />
-                            <line
-                                x1="50"
-                                y1="20"
-                                x2="50"
-                                y2="80"
-                                stroke="#5A9FB0"
-                                strokeWidth="1"
-                            />
-                        </pattern>
-                    </defs>
-                    <rect
-                        width="1200"
-                        height="600"
-                        fill="url(#african-pattern)"
-                    />
-                </svg>
+  return (
+    <section className="relative overflow-hidden pb-24 pt-36 md:pt-44">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_25%,rgba(59,125,145,0.16),transparent_34%),radial-gradient(circle_at_15%_80%,rgba(212,165,116,0.18),transparent_30%)]" />
+      <div className="relative mx-auto max-w-7xl px-6">
+        <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <div>
+            <div className="inline-flex rounded-full border border-[#3B7D91]/15 bg-white/70 px-4 py-2 text-sm font-semibold text-[#3B7D91] shadow-sm backdrop-blur">
+              {locale === "fr" ? "Laboratoire africain de recherche en IA" : "African AI research lab"}
             </div>
-
-            {/* Background Glow */}
-            <div className="absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#3B7D91]/10 blur-3xl animate-pulse-subtle" />
-
-            <div className="relative mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
-
-                {/* LEFT CONTENT */}
-                <div>
-                    <div className="mb-6 inline-flex rounded-full border border-[#3B7D91]/10 bg-[#3B7D91]/10 px-4 py-2 text-sm font-medium text-[#3B7D91] animate-fade-in-down" style={{ animationDelay: '0.1s' }}>
-                        {t("badge")}
-                    </div>
-
-                    <AnimatedTitle titles={t.raw("titles") as string[]} />
-
-                    <p className="mt-8 max-w-2xl text-lg leading-8 text-black/70 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                        {t("description")}
-                    </p>
-
-                    <div className="mt-10 flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                        <button className="rounded-full bg-[#3B7D91] px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#2D6478]">
-                            {t("primaryButton")}
-                        </button>
-
-                        <button className="rounded-full border border-black/10 bg-white px-7 py-4 text-sm font-medium transition hover:border-[#1E4D3A]">
-                            {t("secondaryButton")}
-                        </button>
-                    </div>
-                </div>
-
-                {/* RIGHT SIDE STATS */}
-                <div className="grid gap-5 sm:grid-cols-2">
-
-                    <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm animate-fade-in-up transition-all hover:shadow-lg hover:-translate-y-1" style={{ animationDelay: '0.3s' }}>
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#3B7D91]/10 text-[#3B7D91] animate-float">
-                            <Users size={24} />
-                        </div>
-
-                        <h3 className="text-3xl font-bold">
-                            {t("stats.community.value")}
-                        </h3>
-
-                        <p className="mt-2 text-sm leading-6 text-black/60">
-                            {t("stats.community.description")}
-                        </p>
-                    </div>
-
-                    <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm animate-fade-in-up transition-all hover:shadow-lg hover:-translate-y-1" style={{ animationDelay: '0.4s' }}>
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#D4A574]/10 text-[#D4A574] animate-float">
-                            <Languages size={24} />
-                        </div>
-
-                        <h3 className="text-3xl font-bold">
-                            {t("stats.languages.value")}
-                        </h3>
-
-                        <p className="mt-2 text-sm leading-6 text-black/60">
-                            {t("stats.languages.description")}
-                        </p>
-                    </div>
-
-                    <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm animate-fade-in-up transition-all hover:shadow-lg hover:-translate-y-1" style={{ animationDelay: '0.5s' }}>
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#5A9FB0]/10 text-[#5A9FB0] animate-float">
-                            <Mic size={24} />
-                        </div>
-
-                        <h3 className="text-3xl font-bold">
-                            {t("stats.audio.value")}
-                        </h3>
-
-                        <p className="mt-2 text-sm leading-6 text-black/60">
-                            {t("stats.audio.description")}
-                        </p>
-                    </div>
-
-                    <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm animate-fade-in-up transition-all hover:shadow-lg hover:-translate-y-1" style={{ animationDelay: '0.6s' }}>
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#D4A574]/10 text-[#D4A574] animate-float">
-                            <Database size={24} />
-                        </div>
-
-                        <h3 className="text-3xl font-bold">
-                            {t("stats.open.value")}
-                        </h3>
-
-                        <p className="mt-2 text-sm leading-6 text-black/60">
-                            {t("stats.open.description")}
-                        </p>
-                    </div>
-
-                </div>
+            <h1 className="mt-7 max-w-4xl font-heading text-5xl font-bold leading-[1.04] tracking-tight text-[#111] md:text-7xl">
+              {locale === "fr" ? "Construire l'IA avec les langues et les communautés du Congo" : "Building AI with Congo's languages and communities"}
+            </h1>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-black/65 md:text-xl">
+              {locale === "fr"
+                ? "KivuLingua AI mène des recherches et construit des jeux de données, benchmarks, atlas et technologies vocales pour que les communautés congolaises puissent créer et gouverner leur avenir numérique."
+                : "KivuLingua AI researches and builds datasets, benchmarks, atlases, and speech technologies so Congolese communities can shape and govern their digital future."}
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href={`/${locale}/projects`} className="inline-flex items-center gap-2 rounded-full bg-[#3B7D91] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#2D6478]">
+                {locale === "fr" ? "Voir les projets" : "Explore projects"} <ArrowRight size={16} />
+              </Link>
+              <Link href={`/${locale}/research`} className="rounded-full border border-black/10 bg-white px-6 py-3.5 text-sm font-semibold transition hover:border-[#3B7D91] hover:text-[#3B7D91]">
+                {locale === "fr" ? "Lire la recherche" : "View research"}
+              </Link>
             </div>
-        </section>
-    );
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <div key={stat.value + stat.label.en} className={`rounded-3xl border border-black/5 p-6 shadow-sm ${index === 0 || index === 3 ? "bg-[#102F38] text-white" : "bg-white"}`}>
+                  <Icon size={23} className={index === 0 || index === 3 ? "text-[#D4A574]" : "text-[#3B7D91]"} />
+                  <p className="mt-8 text-4xl font-bold">{stat.value}</p>
+                  <p className={`mt-2 text-sm leading-6 ${index === 0 || index === 3 ? "text-white/65" : "text-black/55"}`}>{stat.label[locale]}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

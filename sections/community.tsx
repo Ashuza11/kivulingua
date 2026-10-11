@@ -82,7 +82,7 @@ export default function Community() {
                 <div className="mt-16 rounded-2xl border border-black/5 bg-gradient-to-br from-[#3B7D91]/5 to-[#D4A574]/5 p-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                     <h3 className="text-2xl font-bold">Get Involved</h3>
                     <p className="mt-4 text-lg text-black/70">
-                        Whether you're a linguist, developer, community member, or language enthusiast, there are many ways to contribute to preserving and advancing African languages through AI.
+                        Whether you are a linguist, developer, community member, or language enthusiast, there are many ways to contribute to preserving and advancing African languages through AI.
                     </p>
                     <button className="mt-6 rounded-full bg-[#3B7D91] px-8 py-3 text-sm font-medium text-white transition hover:bg-[#2D6478] hover:scale-105">
                         {t("cta")}

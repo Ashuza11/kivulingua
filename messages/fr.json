@@ -1,10 +1,9 @@
 {
     "Navbar": {
-        "languages": "Langues",
         "research": "Recherche",
+        "projects": "Projets",
         "team": "Équipe",
-        "community": "Communauté",
-        "roadmap": "Feuille de route"
+        "community": "Communauté"
     },
     "Hero": {
         "badge": "Initiative Africaine d’IA Multilingue Ouverte",
@@ -46,10 +45,6 @@
         "title": "Infrastructure Collaborative pour la Souveraineté Linguistique Numérique",
         "description": "La participation communautaire ancre toutes les initiatives KivuLingua AI. Nous mobilisons locuteurs natifs, enseignants, leaders culturels, stations radio locales dans la collecte participative selon les standards éthiques internationaux. Les communautés cogèrent les données, valident les transcriptions et assurent l'appropriété culturelle. Nous priorisons le consentement informé, l'anonymisation et le partage des bénéfices.",
         "cta": "Rejoignez Notre Initiative"
-    },
-    "Roadmap": {
-        "title": "Chronologie de mise en œuvre sur 12 mois (Jul 2026 - Jun 2027)",
-        "description": "Notre feuille de route stratégique intègre la collecte continue de données, le développement des modèles, les pilotes éducatifs et sanitaires, et la publication dans l'écosystème ouvert. Chaque phase s'appuie sur la participation communautaire, les protocoles éthiques et l'impact mesurable dans les cas d'usage réels."
     },
     "Objectives": {
         "title": "Objectifs Stratégiques",
@@ -146,7 +141,7 @@
             },
             {
                 "title": "Application Mobile de Collecte",
-                "description": "Co-développée avec Kwetu Best Technologies. Application Android pour la capture vocale hors ligne, intégration de transcription et génération automatique de données linguistiques",
+                "description": "Application Android pour la capture vocale hors ligne, intégration de transcription et génération automatique de données linguistiques",
                 "metric": "Déployée avec 30 agents de santé + 5 écoles"
             },
             {
@@ -210,7 +205,7 @@
             },
             {
                 "title": "Équipe Communautaire",
-                "description": "Équipe interdisciplinaire d'ingénieurs IA, de linguistes et de leaders communautaires. Consortium avec African STEM Resources Hub & Kwetu Best."
+                "description": "Une équipe ciblée de chercheurs en IA, d'ingénieurs et de spécialistes du mashi travaillant avec les communautés congolaises."
             },
             {
                 "title": "8 Langues Bantoues",
@@ -238,7 +233,7 @@
         }
     },
     "Footer": {
-        "description": "Construire une IA vocale ouverte et des ensembles de données linguistiques pour les langues bantoues sous-représentées à travers l'Est du Congo grâce à la collaboration communautaire et l'excellence scientifique.",
+        "description": "Un laboratoire africain de recherche en IA qui construit des données, benchmarks, cartes et technologies vocales avec les communautés linguistiques congolaises.",
         "contact": {
             "title": "Contact",
             "email": "ashuzamh@gmail.com",
@@ -251,10 +246,10 @@
             "github": "→ GitHub",
             "linkedin": "→ LinkedIn"
         },
-        "copyright": "© 2026 KivuLingua AI. Préserver les Langues Africaines Grâce à la Science Ouverte"
+        "copyright": "© 2026 KivuLingua AI Lab. Recherche, outils et savoirs communautaires"
     },
     "Partners": {
-        "title": "Partenaires du Projet",
-        "description": "Travailler ensemble pour construire une infrastructure durable pour les technologies linguistiques africaines"
+        "title": "Affiliations et communautés",
+        "description": "Des relations qui relient la recherche, la culture, l'apprentissage et la validation communautaire"
     }
 }

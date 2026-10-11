@@ -21,7 +21,7 @@ const technologies = [
     {
         icon: Smartphone,
         title: "Mobile Collection App",
-        description: "Co-developed with Kwetu Best Technologies. Android app for offline voice capture, transcription integration, and automatic linguistic data generation.",
+        description: "Android app for offline voice capture, transcription integration, and automatic linguistic data generation.",
         metric: "30 health workers + 5 schools",
         color: "#5A9FB0"
     },
